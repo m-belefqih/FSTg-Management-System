@@ -17,13 +17,13 @@ try {
     $conn->exec("SET NAMES utf8");
 
     // If successful, create an error_log.txt file and write the date and time of successful connection
-    file_put_contents($_SERVER['DOCUMENT_ROOT'] . 'FSTG-MANAGEMENT-SYSTEM/logs/error_log.txt', date('Y-m-d H:i:s') . " - Successfully connected to database!\n", FILE_APPEND);
+    file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt', date('Y-m-d H:i:s') . " - Successfully connected to database!\n", FILE_APPEND);
 
 } catch (PDOException $e) {
 
     // In case of error, create an error_log.txt file and write the date and time of the error
     // User won't see technical error details, which is more secure
-    file_put_contents($_SERVER['DOCUMENT_ROOT'] . 'FSTG-MANAGEMENT-SYSTEM/logs/error_log.txt', date('Y-m-d H:i:s') . " - PDO Error: " . $e->getMessage(). "\n", FILE_APPEND);
+    file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt', date('Y-m-d H:i:s') . " - PDO Error: " . $e->getMessage(). "\n", FILE_APPEND);
 
     // Stop the script and display an error message on the page
     die("An error has occurred. Please contact the administrator!");
