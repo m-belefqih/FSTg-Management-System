@@ -46,7 +46,7 @@
                         <div class="login-right-wrap">
                             <img src="assets/img/logo-FST.png" style="height: 150px; display: block; margin: 0 auto;" alt="logo of FSTG">
                             <h1>Bienvenue sur FSTG Notes</h1>
-                            <p class="account-subtitle">Besoin d'un compte ? <a href="registration.php">Inscrivez-vous</a></p>
+                            <p class="account-subtitle">Besoin d'un compte ? <a href="views/registration.php">Inscrivez-vous</a></p>
                             <h2>Connectez-vous</h2>
                             
                             <!-- Form to submit -->
@@ -80,7 +80,7 @@
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
-                                    <a href="forgot-password.html">Mot de passe oublié ?</a>
+                                    <a href="views/forgot_password.php">Mot de passe oublié ?</a>
                                 </div>
                                 <div class="form-group">
                                     <button class="btn btn-primary btn-block" type="submit">Se connecter</button>
