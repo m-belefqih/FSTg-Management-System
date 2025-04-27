@@ -1,6 +1,7 @@
 <?php
 
 $servername = "localhost"; // Server name (usually localhost for local server)
+$port = "3306"; // MySQL default port
 $username = "root"; // Database username
 $password = ""; // Database password (empty by default for XAMPP or WAMP)
 $dbname = "fstg_db"; // Name of the database to connect to
@@ -8,7 +9,7 @@ $dbname = "fstg_db"; // Name of the database to connect to
 try {
     
     // Creating a database connection using PDO (PHP Data Objects)
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
 
     // Configure the connection to display errors
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
