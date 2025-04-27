@@ -1,6 +1,24 @@
 /* This file is used to override the default styles of the theme. */
 
 .btn-primary {
-    background-color: #C17900 !important;
-    border: 1px solid #C17900 !important;
-  }
+  background-color: #C17900 !important;
+  border: 1px solid #C17900 !important;
+}
+
+.login-wrapper .loginbox .login-right .forgotpass a {
+  color: #C17900 !important;
+}
+
+.account-subtitle a{
+  color: #C17900 !important;
+}
+
+.custom_check input:checked ~ .checkmark {
+  background-color: #C17900 !important;
+  border-color: #C17900 !important;
+}
+
+input:focus {
+  border-color: #C17900 !important;
+  outline: none; /* Optional: Removes the default outline */
+}
