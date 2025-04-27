@@ -5,7 +5,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script type="text/javascript"> window.history.forward();</script>
+<script type="text/javascript">
+    window.history.forward();
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
@@ -37,7 +40,7 @@
 
             <!-- Container that have the main page -->
             <div class="container">
-                
+
                 <div class="loginbox" style="height: 550px;">
                     <div class="login-left">
                         <img class="img-fluid" style="height: 550px;" src="assets/img/login.jpg" alt="image of login">
@@ -48,25 +51,27 @@
                             <h1>Bienvenue sur FSTG Notes</h1>
                             <p class="account-subtitle">Besoin d'un compte ? <a href="views/registration.php">Inscrivez-vous</a></p>
                             <h2>Connectez-vous</h2>
-                            
+
                             <!-- Form to submit -->
                             <form action="views/auth/login.php" method="post">
-                                <?php if(isset($_SESSION['error'])) { ?>
+                                <?php if (isset($_SESSION['error'])) { ?>
                                     <div class="form-group">
                                         <span class="alert alert-danger" style="display: block; width: 100%; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: .25rem;" role="alert">
-                                            <i class="fas fa-exclamation-triangle"></i> 
+                                            <i class="fas fa-exclamation-triangle"></i>
                                             <?php foreach ($_SESSION['error'] as $error) {
                                                 echo $error;
-                                                }
-                                                unset($_SESSION['error']);  ?>
+                                            }
+                                            unset($_SESSION['error']);  ?>
                                         </span>
-                                    </div> 
+                                    </div>
                                 <?php } ?>
+                                <!-- input of email -->
                                 <div class="form-group">
                                     <label>Email académique <span class="login-danger">*</span></label>
                                     <input class="form-control" type="email" name="email" required>
                                     <span class="profile-views"><i class="fas fa-user-circle"></i></span>
                                 </div>
+                                <!-- input of password -->
                                 <div class="form-group">
                                     <label>Mot de passe <span class="login-danger">*</span></label>
                                     <input class="form-control pass-input" type="password" name="password" required>
@@ -86,21 +91,12 @@
                                     <button class="btn btn-primary btn-block" type="submit">Se connecter</button>
                                 </div>
                             </form>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/feather.min.js"></script>
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
