@@ -26,11 +26,6 @@
     <link rel="stylesheet" href="assets/css/style-override.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- scripts files -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/feather.min.js"></script>
-    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -54,7 +49,7 @@
                             <h2>Connectez-vous</h2>
 
                             <!-- Form to submit -->
-                            <form action="views/auth/login.php" method="post">
+                            <form action="controllers/loginController.php" method="POST">
                                 <?php if (isset($_SESSION['error'])) { ?>
                                     <div class="form-group">
                                         <span class="alert alert-danger" style="display: block; width: 100%; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: .25rem;" role="alert">
@@ -98,6 +93,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Script files -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/feather.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
