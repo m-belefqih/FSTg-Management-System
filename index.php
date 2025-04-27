@@ -9,7 +9,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
     <title>FSTG - Login</title>
+    <!-- CSS Styles -->
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -17,8 +19,10 @@
     <link rel="stylesheet" href="assets/plugins/icons/flags/flags.css">
     <link rel="stylesheet" href="plugins/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style-override.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- scripts files -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/feather.min.js"></script>
@@ -28,7 +32,10 @@
 <body>
 
     <div class="main-wrapper login-body">
+
         <div class="login-wrapper">
+
+            <!-- Container that have the main page -->
             <div class="container">
                 
                 <div class="loginbox" style="height: 550px;">
@@ -42,6 +49,7 @@
                             <p class="account-subtitle">Besoin d'un compte ? <a href="registration.php">Inscrivez-vous</a></p>
                             <h2>Connectez-vous</h2>
                             
+                            <!-- Form to submit -->
                             <form action="views/auth/login.php" method="post">
                                 <?php if(isset($_SESSION['error'])) { ?>
                                     <div class="form-group">
@@ -56,12 +64,12 @@
                                 <?php } ?>
                                 <div class="form-group">
                                     <label>Email académique <span class="login-danger">*</span></label>
-                                    <input class="form-control" type="text" name="email">
+                                    <input class="form-control" type="email" name="email" required>
                                     <span class="profile-views"><i class="fas fa-user-circle"></i></span>
                                 </div>
                                 <div class="form-group">
                                     <label>Mot de passe <span class="login-danger">*</span></label>
-                                    <input class="form-control pass-input" type="password" name="password">
+                                    <input class="form-control pass-input" type="password" name="password" required>
                                     <span class="profile-views feather-eye toggle-password"></span>
                                 </div>
                                 <div class="forgotpass">

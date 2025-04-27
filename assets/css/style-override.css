@@ -1,0 +1,6 @@
+/* This file is used to override the default styles of the theme. */
+
+.btn-primary {
+    background-color: #C17900 !important;
+    border: 1px solid #C17900 !important;
+  }
