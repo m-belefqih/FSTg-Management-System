@@ -37,6 +37,7 @@
                     </div>
                     <div class="login-right">
                         <div class="login-right-wrap">
+                            <img src="assets/img/logo-FST.png" style="height: 150px; display: block; margin: 0 auto;" alt="logo of FSTG">
                             <h1>Bienvenue sur FSTG Notes</h1>
                             <p class="account-subtitle">Besoin d'un compte ? <a href="registration.php">Inscrivez-vous</a></p>
                             <h2>Connectez-vous</h2>
