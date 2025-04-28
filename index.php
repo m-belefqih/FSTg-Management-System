@@ -1,5 +1,5 @@
 <?php
-// include($_SERVER['DOCUMENT_ROOT'] . '/ENSAHify/views/auth/session.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
 ?>
 
 <!DOCTYPE html>

@@ -1,11 +1,8 @@
 <?php
 session_start();
 
-echo "Mohammed belefqih";
-
-// Include required files
-include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/config/DB_connection.php');
-// include($_SERVER['DOCUMENT_ROOT'] . '/ENSAHify/views/auth/session.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/config/DB_connection.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
 
 // Function to validate login credentials
 function validateLoginCredentials($email, $password, $conn) {
@@ -59,9 +56,13 @@ function redirectUser($role) {
 }
 
 // Main login 
-if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // Récupérer et filtrer l'email 
+
+    $password = $_POST['password']; // Récupérer le mot de passe
     
-    $loginResult = validateLoginCredentials($_REQUEST['email'], $_REQUEST['password'], $conn);
+    $loginResult = validateLoginCredentials($email, $password, $conn);
 
     if (mysqli_num_rows($loginResult) > 0) {
         $userData = mysqli_fetch_assoc($loginResult); // userData is an associative array
@@ -74,7 +75,7 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
         setUserSession($userData, $roleData);
 
         // Handle remember me functionality
-        if (isset($_REQUEST['remember']) && $_REQUEST['remember'] === 'checked') {
+        if (isset($_POST['remember']) && $_POST['remember'] === 'checked') {
             handleRememberMe($userData['id'], $conn);
         }
 
@@ -85,9 +86,5 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
         header("Location: /FSTg-Management-System/index.php");
         exit();
     }
-} else {
-    $_SESSION['error'][] = "Please enter your login credentials";
-    header("Location: /FSTg-Management-System/index.php");
-    exit();
 }
 ?>
