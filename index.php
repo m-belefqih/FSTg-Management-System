@@ -16,7 +16,7 @@
     <title>FSTG - Connexion</title>
 
     <!-- CSS Styles -->
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" href="https://ecampus-fst.uca.ma/pluginfile.php/1/theme_moove/favicon/1739555045/logo-universite-cadi-ayyad-marrakech-uca%20%281%29.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/feather/feather.css">
@@ -63,7 +63,7 @@
                                 <?php } ?>
                                 <!-- input of email -->
                                 <div class="form-group">
-                                    <label>Email académique <span class="login-danger">*</span></label>
+                                    <label>Email Académique <span class="login-danger">*</span></label>
                                     <input class="form-control" type="email" name="email" required>
                                     <span class="profile-views"><i class="fas fa-user-circle"></i></span>
                                 </div>
