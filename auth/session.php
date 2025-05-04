@@ -1,4 +1,7 @@
 <?php
+// Description : if the user is not logged in, but he clicked on "remember me" checkbox of the login page
+// This file is responsible for handling the session and remember me functionality
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
