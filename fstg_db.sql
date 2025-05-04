@@ -278,4 +278,13 @@ ALTER TABLE `filiere`
 ALTER TABLE `module`
     ADD CONSTRAINT `module_fk1` FOREIGN KEY (`id_filiere`) REFERENCES `filiere` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
     ADD CONSTRAINT `module_fk2` FOREIGN KEY (`id_teacher`) REFERENCES `user` (`id`) ON UPDATE CASCADE;
+
+--                                                                                            --
+-- Constraints for table `note`
+--
+
+ALTER TABLE `note`
+    ADD CONSTRAINT `note_fk1` FOREIGN KEY (`id_module`) REFERENCES `module` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `note_fk2` FOREIGN KEY (`id_teacher`) REFERENCES `user` (`id`) ON UPDATE CASCADE,
+    ADD CONSTRAINT `note_fk3` FOREIGN KEY (`cne_etudiant`) REFERENCES `user` (`CNE`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;

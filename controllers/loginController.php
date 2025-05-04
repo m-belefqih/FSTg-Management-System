@@ -14,7 +14,8 @@ function validateLoginCredentials($email, $password, $conn) {
 }
 
 // Function to set user session
-function setUserSession($userData, $roleData) {
+function setUserSession($userData, $roleData): void
+{
     $_SESSION['user_data'] = $userData;
     $_SESSION['dep_id'] = $userData['id_dep'];
     $_SESSION['fil_nom'] = $userData['nom_filiere'];
