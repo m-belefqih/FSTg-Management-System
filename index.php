@@ -48,7 +48,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
                             <h2>Connectez-vous</h2>
 
                             <!-- Form to submit -->
-                            <form action="controllers/loginController.php" method="POST">
+                            <form action="controllers/login_controller.php" method="POST">
                                 <?php if (isset($_SESSION['error'])) { ?>
                                     <div class="form-group">
                                         <span class="alert alert-danger" style="display: block; width: 100%; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: .25rem;" role="alert">
