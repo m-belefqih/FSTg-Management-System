@@ -9,12 +9,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/models/user.php');
 // Function to set user session
 function setUserSession($userData, $roleData): void
 {
-    $_SESSION['user_data'] = $userData;
-    $_SESSION['dep_id'] = $userData['id_dep'];
-    $_SESSION['fil_nom'] = $userData['id_filiere'];
-    $_SESSION['user_id'] = $userData['id'];
-    //$_SESSION['niveau'] = $userData['niveau'];
-    $_SESSION['cne'] = $userData['CNE'];
+    $_SESSION['user_data'] = $userData; // userData is an associative array
     $_SESSION['role_name'] = $roleData['nom']; // roleData is an associative array
 }
 
