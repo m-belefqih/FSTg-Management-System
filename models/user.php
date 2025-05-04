@@ -36,10 +36,12 @@ function handleRememberMe($userId):void
     $hashedValidator = hash('sha256', $validator);
     $expiry = date('Y-m-d H:i:s', strtotime('+30 days'));
 
-    $query = "INSERT INTO user_tokens (selector, hashed_validator, user_id, expiry) VALUES (?, ?, ?, ?)";
+    $query = "INSERT INTO user_tokens (selector, hashed_validator, id_user, expiry) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($query);
     $stmt->execute([$selector, $hashedValidator, $userId, $expiry]);
 
+    // Set the cookie to use it in session.php
+    // cookie is will expire in 30 days
     setcookie('remember', $selector.':'.bin2hex($validator), time() + (86400 * 30), "/", "", false, true);
 }
 
