@@ -44,7 +44,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
                         <div class="login-right-wrap">
                             <img src="assets/img/logo-FST.png" style="height: 150px; display: block; margin: 0 auto;" alt="logo of FSTG">
                             <h1>Bienvenue sur FSTG Notes</h1>
-                            <p class="account-subtitle">Besoin d'un compte ? <a href="views/registration.php">Inscrivez-vous</a></p>
+                            <p class="account-subtitle">Besoin d'un compte ? <a href="error.php">Inscrivez-vous</a></p>
                             <h2>Connectez-vous</h2>
 
                             <!-- Form to submit -->
@@ -62,14 +62,14 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
                                 <?php } ?>
                                 <!-- input of email -->
                                 <div class="form-group">
-                                    <label>Email Académique <span class="login-danger">*</span></label>
-                                    <input class="form-control" type="email" name="email" required>
+                                    <label for="email-form">Email Académique <span class="login-danger">*</span></label>
+                                    <input class="form-control" id="email-form" type="email" name="email" required>
                                     <span class="profile-views"><i class="fas fa-user-circle"></i></span>
                                 </div>
                                 <!-- input of password -->
                                 <div class="form-group">
-                                    <label>Mot de passe <span class="login-danger">*</span></label>
-                                    <input class="form-control pass-input" type="password" name="password" required>
+                                    <label for="password-form">Mot de passe <span class="login-danger">*</span></label>
+                                    <input class="form-control pass-input" id="password-form" type="password" name="password" required>
                                     <span class="profile-views feather-eye toggle-password"></span>
                                 </div>
                                 <div class="forgotpass">
@@ -80,7 +80,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
-                                    <a href="views/forgot_password.php">Mot de passe oublié ?</a>
+                                    <a href="error.php">Mot de passe oublié ?</a>
                                 </div>
                                 <div class="form-group">
                                     <button class="btn btn-primary btn-block" type="submit">Se connecter</button>
