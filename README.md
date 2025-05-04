@@ -12,6 +12,6 @@ role 2 = cordonateur
 
 le chef de departement est aussi un professeur
 
-Les mots de passes de l'utilisateur est : **helloworld**
+Les mots de passes de tous les utilisateurs est : **fstg**
 
 on a pas la page de l'inscription parce que tous les étudiants ont déjà les emails académiques (cordinateur ajoute les étudiants)
