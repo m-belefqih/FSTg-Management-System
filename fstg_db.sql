@@ -51,6 +51,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
+INSERT INTO `user` (`id`, `prenom`, `nom`, `genre`, `dateNaissance`, `email`, `password`, `CNE`, `CIN`, `phone`, `created_at`, `id_filiere`, `id_role`, `id_dep`) VALUES
 (1, 'Soulaimane ', 'Kaloun', 'male', NULL, 'so.kaloun@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12345', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 1, 1),
 (2, 'QASSIMI', 'Sara', 'female', NULL, 'sara.qassimi@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12346', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
 (3, 'SADQI', 'Yassine', 'male', NULL, 'y.sadqi@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12347', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
