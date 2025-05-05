@@ -22,8 +22,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
     <link rel="stylesheet" href="assets/plugins/feather/feather.css">
     <link rel="stylesheet" href="assets/plugins/icons/flags/flags.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style-override.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-override.css">
 
 </head>
 
@@ -44,11 +44,12 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
                         <div class="login-right-wrap">
                             <img src="assets/img/logo-FST.png" style="height: 150px; display: block; margin: 0 auto;" alt="logo of FSTG">
                             <h1>Bienvenue sur FSTG Notes</h1>
-                            <p class="account-subtitle">Besoin d'un compte ? <a href="error.php">Inscrivez-vous</a></p>
+                            <p class="account-subtitle">Besoin d'un compte ? <a href="views/error.php">Inscrivez-vous</a></p>
                             <h2>Connectez-vous</h2>
 
                             <!-- Form to submit -->
                             <form action="controllers/login_controller.php" method="POST">
+
                                 <?php if (isset($_SESSION['error'])) { ?>
                                     <div class="form-group">
                                         <span class="alert alert-danger" style="display: block; width: 100%; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: .25rem;" role="alert">
@@ -60,6 +61,17 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
                                         </span>
                                     </div>
                                 <?php } ?>
+
+
+                                <?php if (isset($_GET['error'])) { ?>
+                                    <div class="form-group">
+                                        <span class="alert alert-danger" style="display: block; width: 100%; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: .25rem;" role="alert">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            <?php echo $_GET['error']; ?>
+                                        </span>
+                                    </div>
+                                <?php } ?>
+
                                 <!-- input of email -->
                                 <div class="form-group">
                                     <label for="email-form">Email Académique <span class="login-danger">*</span></label>
@@ -80,7 +92,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
-                                    <a href="error.php">Mot de passe oublié ?</a>
+                                    <a href="views/error.php">Mot de passe oublié ?</a>
                                 </div>
                                 <div class="form-group">
                                     <button class="btn btn-primary btn-block" type="submit">Se connecter</button>
