@@ -36,7 +36,7 @@ CREATE TABLE `user` (
   `genre` enum('female','male') DEFAULT NULL,
   `dateNaissance` date DEFAULT NULL,
   `email` varchar(150) NOT NULL UNIQUE,
-  `password` varchar(200) NOT NULL,
+  `password` varchar(200) DEFAULT NULL,
   `CNE` varchar(20) DEFAULT NULL UNIQUE,
   `CIN` varchar(20) NOT NULL UNIQUE,
   `phone` varchar(20) DEFAULT NULL,
