@@ -7,13 +7,13 @@
                         <span>Menu Principal</span>
                     </li>
                     <li>
-                        <a href="home.php"><i class="fas fa-home"></i><span> Accueil</span></a>
+                        <a href="/FSTg-Management-System/views/chef_dep/home.php"><i class="fas fa-home"></i><span> Accueil</span></a>
                     </li>
                     <li>
-                        <a href="teacher_management/list_teachers.php"><i class="fas fa-chalkboard-teacher"></i><span> Enseignants</span></a>
+                        <a href="/FSTg-Management-System/views/chef_dep/teacher_management/"><i class="fas fa-chalkboard-teacher"></i><span> Enseignants</span></a>
                     </li>
                     <li>
-                        <a href="module_management/list_modules.php"><i class="fas fa-book-reader"></i><span> Modules</span></a>
+                        <a href="/FSTg-Management-System/views/chef_dep/module_management/"><i class="fas fa-book-reader"></i><span> Modules</span></a>
                     </li>
                     <?php if ($_SESSION['user_data']['id_role'] == 1) { ?>
                         <li class="menu-title">
