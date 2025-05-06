@@ -39,7 +39,7 @@ CREATE TABLE `user` (
   `password` varchar(200) DEFAULT NULL,
   `CNE` varchar(20) DEFAULT NULL UNIQUE,
   `CIN` varchar(20) NOT NULL UNIQUE,
-  `phone` varchar(20) DEFAULT NULL UNIQUE,
+  `phone` varchar(20) DEFAULT NULL,
   `created_at` datetime NOT NULL,
   `id_role` int(11) NOT NULL,
   `id_dep` int(11) NOT NULL,
