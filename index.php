@@ -1,5 +1,5 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
 ?>
 
 <!DOCTYPE html>
