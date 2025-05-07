@@ -1,6 +1,8 @@
 <?php
 // linking the model with view using this controller
 require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/models/teacher.php');
+
+// Function to get the page for listing all teachers
 function indexAction(): void
 {
     $teachers = array();
@@ -14,11 +16,13 @@ function indexAction(): void
     require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/teacher_management/list_teachers.php');
 }
 
+// Function to get the page for creating a new teacher
 function createAction(): void
 {
     require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/teacher_management/create.php');
 }
 
+// Function to store a new teacher
 function storeAction(): void
 {
     $nom = htmlentities($_POST['nom']);
@@ -54,6 +58,7 @@ function storeAction(): void
     header('Location: index.php?action=list');
 }
 
+// Function to get the page for editing a teacher
 function editAction(): void
 {
     $id = $_GET['id'];
@@ -61,6 +66,7 @@ function editAction(): void
     require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/teacher_management/edit.php');
 }
 
+// Function to update a teacher
 function updateAction(): void
 {
     $id = htmlentities($_POST['id']);
@@ -84,6 +90,7 @@ function updateAction(): void
     header('location:index.php?action=list');
 }
 
+// Function to delete a teacher
 function deleteAction(): void
 {
     $test = delete($_GET['id']);
@@ -93,6 +100,5 @@ function deleteAction(): void
     } else {
         $_SESSION['error'] = "Échec de la suppression";
     }
-
     header('location:index.php?action=list');
 }
