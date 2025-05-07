@@ -16,7 +16,6 @@
             </div>
         </div>
 
-
         <div class="row">
             <div class="col-xl-3 col-sm-6 col-12 d-flex">
                 <div class="card bg-comman w-100">
@@ -57,7 +56,8 @@
                                 <h3 class="num" data-value="52">00</h3>
                             </div>
                             <div class="db-icon">
-                                <img src="../../assets/img/icons/teacher.png" style="width:40px;margin-left:5px" alt="Dashboard Icon">
+                                <img src="../../assets/img/icons/teacher.png" style="width:40px;margin-left:5px"
+                                     alt="Dashboard Icon">
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,8 @@
                                 <h3 class="num" data-value="14">0</h3>
                             </div>
                             <div class="db-icon">
-                                <img src="../../assets/img/icons/school.png" style="width: 40px;margin-left:7px" alt="Dashboard Icon">
+                                <img src="../../assets/img/icons/school.png" style="width: 40px;margin-left:7px"
+                                     alt="Dashboard Icon">
                             </div>
                         </div>
                     </div>
@@ -191,7 +192,8 @@
                             <div class="card-header d-flex align-items-center">
                                 <h5 class="card-title">Teaching History</h5>
                                 <ul class="chart-list-out student-ellips">
-                                    <li class="star-menus"><a href="javascript:"><i class="fas fa-ellipsis-v"></i></a></li>
+                                    <li class="star-menus"><a href="javascript:"><i class="fas fa-ellipsis-v"></i></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="card-body">
@@ -208,7 +210,9 @@
                                                 <ul class="teacher-date-list">
                                                     <li><i class="fas fa-calendar-alt me-2"></i>June 6, 2024</li>
                                                     <li>|</li>
-                                                    <li><i class="fas fa-clock me-2"></i>09:00 am - 10:00 am (60 Minutes)</li>
+                                                    <li><i class="fas fa-clock me-2"></i>09:00 am - 10:00 am (60
+                                                        Minutes)
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div class="activity-btns ms-auto">
@@ -221,7 +225,9 @@
                                                 <ul class="teacher-date-list">
                                                     <li><i class="fas fa-calendar-alt me-2"></i>June 5, 2024</li>
                                                     <li>|</li>
-                                                    <li><i class="fas fa-clock me-2"></i>09:00 am - 10:00 am (60 Minutes)</li>
+                                                    <li><i class="fas fa-clock me-2"></i>09:00 am - 10:00 am (60
+                                                        Minutes)
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div class="activity-btns ms-auto">
@@ -234,7 +240,9 @@
                                                 <ul class="teacher-date-list">
                                                     <li><i class="fas fa-calendar-alt me-2"></i>June 4, 2024</li>
                                                     <li>|</li>
-                                                    <li><i class="fas fa-clock me-2"></i>09:00 am - 10:00 am (60 Minutes)</li>
+                                                    <li><i class="fas fa-clock me-2"></i>09:00 am - 10:00 am (60
+                                                        Minutes)
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div class="activity-btns ms-auto">
@@ -306,11 +314,13 @@
                                     <span>08:00 - 09:00 am</span>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                     <footer>
                         <p>Copyright © 2025 BELEFQIH Mohammed.</p>
                     </footer>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
