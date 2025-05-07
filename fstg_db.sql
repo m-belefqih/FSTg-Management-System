@@ -52,22 +52,22 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `prenom`, `nom`, `genre`, `dateNaissance`, `email`, `password`, `CNE`, `CIN`, `phone`, `created_at`, `id_filiere`, `id_role`, `id_dep`) VALUES
-(1, 'Kaloun', 'Soulaimane', 'male', NULL, 'so.kaloun@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12345', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 1, 1),
-(2, 'Sara', 'QASSIMI', 'female', NULL, 'sara.qassimi@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12346', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
-(3, 'Yassine', 'SADQI', 'male', NULL, 'y.sadqi@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12347', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
-(4, 'Aziz', 'DAROUICHI', 'male', NULL, 'az.darouichi@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12348', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
-(5, 'Mohammed', 'AIT HEMAD', 'male', NULL, 'ait.hemad.m@hotmail.com', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12349', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
-(6, 'Mohammed', 'BELEFQIH', 'male', NULL, 'm.belefqih5955@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12350', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
-(7, 'Mossaab', 'SADKI', 'male', NULL, 'm.sadki9752@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12351', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
-(8, 'Hamza', 'OUTZMOURTE', 'male', NULL, 'h.outzmourte1206@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12352', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
-(9, 'Anas', 'HALLOUMI', 'male', NULL, 'a.halloumi9030@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12353', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
-(10, 'Mohammed', 'EL OMRI', 'male', NULL, 'm.elomri0337@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12354', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
-(11, 'Mohammed', 'ALLALI', 'male', NULL, 'm.allali1846@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12355', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
-(12, 'Noura', 'LAMZARA', 'female', NULL, 'n.lamzara2439@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12356', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
-(13, 'Sayouba', 'OUEDRAOGO', 'male', NULL, 's.ouedraogo0058@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12357', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
-(14, 'Abdelilah', 'ERRAGUIBI', 'male', NULL, 'a.erraguibi3361@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12359', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
-(15, 'El Hamal', 'Nouhaila', 'female', NULL, 'n.elhamal4829@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12360', '+212 622 222 222', '2025-04-29 15:04:10', 4, 4, 1),
-(16, 'El Idrissi', 'Mohammed', 'male', NULL, 'm.elidrissi6618@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12361', '+212 622 222 222', '2025-04-29 15:04:10', 4, 4, 1);
+(1, 'Kaloun', 'Soulaimane', 'male', '1990-09-01', 'so.kaloun@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12345', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 1, 1),
+(2, 'Sara', 'QASSIMI', 'female', '1990-09-01', 'sara.qassimi@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12346', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
+(3, 'Yassine', 'SADQI', 'male', '1990-09-01', 'y.sadqi@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12347', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
+(4, 'Aziz', 'DAROUICHI', 'male', '1990-09-01', 'az.darouichi@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12348', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
+(5, 'Mohammed', 'AIT HEMAD', 'male', '1990-09-01', 'ait.hemad.m@hotmail.com', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12349', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
+(6, 'Mohammed', 'BELEFQIH', 'male', '1990-09-01', 'm.belefqih5955@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12350', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
+(7, 'Mossaab', 'SADKI', 'male', '1990-09-01', 'm.sadki9752@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12351', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
+(8, 'Hamza', 'OUTZMOURTE', 'male', '1990-09-01', 'h.outzmourte1206@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12352', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
+(9, 'Anas', 'HALLOUMI', 'male', '1990-09-01', 'a.halloumi9030@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12353', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
+(10, 'Mohammed', 'EL OMRI', 'male', '1990-09-01', 'm.elomri0337@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12354', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
+(11, 'Mohammed', 'ALLALI', 'male', '1990-09-01', 'm.allali1846@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12355', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
+(12, 'Noura', 'LAMZARA', 'female', '1990-09-01', 'n.lamzara2439@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12356', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
+(13, 'Sayouba', 'OUEDRAOGO', 'male', '1990-09-01', 's.ouedraogo0058@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12357', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
+(14, 'Abdelilah', 'ERRAGUIBI', 'male', '1990-09-01', 'a.erraguibi3361@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12359', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
+(15, 'El Hamal', 'Nouhaila', 'female', '1990-09-01', 'n.elhamal4829@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12360', '+212 622 222 222', '2025-04-29 15:04:10', 4, 4, 1),
+(16, 'El Idrissi', 'Mohammed', 'male', '1990-09-01', 'm.elidrissi6618@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12361', '+212 622 222 222', '2025-04-29 15:04:10', 4, 4, 1);
 
 -- ---------------------------------------------------------------------------------
 
