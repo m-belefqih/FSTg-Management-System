@@ -260,9 +260,9 @@ ALTER TABLE `user_tokens`
 ALTER TABLE `user`
     ADD CONSTRAINT `user_fk1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id`) ON UPDATE CASCADE,
     ADD CONSTRAINT `user_fk2` FOREIGN KEY (`id_dep`) REFERENCES `departement` (`id`) ON UPDATE CASCADE,
-    ADD CONSTRAINT `user_fk3` FOREIGN KEY (`id_filiere`) REFERENCES `filiere` (`id`) ON UPDATE CASCADE;
+    ADD CONSTRAINT `user_fk3` FOREIGN KEY (`id_filiere`) REFERENCES `filiere` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
 
---                                                                                            --
+--
 -- Constraints for table `filiere`
 --
 
@@ -270,19 +270,19 @@ ALTER TABLE `filiere`
     ADD CONSTRAINT `filiere_fk1` FOREIGN KEY (`id_coordinator`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
     ADD CONSTRAINT `filiere_fk2` FOREIGN KEY (`id_dep`) REFERENCES `departement` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
---                                                                                            --
+--
 -- Constraints for table `module`
 --
 
 ALTER TABLE `module`
     ADD CONSTRAINT `module_fk1` FOREIGN KEY (`id_filiere`) REFERENCES `filiere` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-    ADD CONSTRAINT `module_fk2` FOREIGN KEY (`id_teacher`) REFERENCES `user` (`id`) ON UPDATE CASCADE;
+    ADD CONSTRAINT `module_fk2` FOREIGN KEY (`id_teacher`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
---                                                                                            --
+--
 -- Constraints for table `note`
 --
 
 ALTER TABLE `note`
-    ADD CONSTRAINT `note_fk1` FOREIGN KEY (`id_module`) REFERENCES `module` (`id`) ON UPDATE CASCADE,
-    ADD CONSTRAINT `note_fk2` FOREIGN KEY (`id_teacher`) REFERENCES `user` (`id`) ON UPDATE CASCADE;
+    ADD CONSTRAINT `note_fk1` FOREIGN KEY (`id_module`) REFERENCES `module` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `note_fk2` FOREIGN KEY (`id_teacher`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
