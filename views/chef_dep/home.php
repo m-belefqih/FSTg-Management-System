@@ -12,12 +12,15 @@ if (isset($_SESSION['user_data'])) { ?>
 
     <title>Tableau de bord</title>
 
-    <!-- CSS Styles -->
+    !-- Icon of FSTg -->
     <link rel="shortcut icon" href="https://ecampus-fst.uca.ma/pluginfile.php/1/theme_moove/favicon/1739555045/logo-universite-cadi-ayyad-marrakech-uca%20%281%29.ico">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/plugins/feather/feather.css">
-    <link rel="stylesheet" href="../../assets/plugins/icons/flags/flags.css">
     <link rel="stylesheet" href="../../assets/plugins/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="../../assets/plugins/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
@@ -42,10 +45,8 @@ if (isset($_SESSION['user_data'])) { ?>
     <script src="../../assets/js/circle-progress.min.js"></script>
     <script src="../../assets/plugins/apexchart/student-chart.js"></script>
     <script src="../../assets/plugins/apexchart/apexcharts.min.js"></script>
-    <script src="../../assets/plugins/apexchart/student-chart.js"></script>
     <script src="../../assets/plugins/simple-calendar/jquery.simple-calendar.js"></script>
     <script src="../../assets/js/calander.js"></script>
-    <script src="../../assets/js/circle-progress.min.js"></script>
     <script src="../../assets/js/script.js"></script>
     <script src="../../assets/plugins/script.js"></script>
 
