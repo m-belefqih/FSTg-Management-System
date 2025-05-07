@@ -81,7 +81,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.p
                                     <input class="form-control" id="email-form" type="email" name="email" required>
                                     <span class="profile-views"><i class="fas fa-user-circle"></i></span>
                                 </div>
-                                <!-- input of password -->
+                                <!-- input of password (password of all users is : fstg) -->
                                 <div class="form-group">
                                     <label for="password-form">Mot de passe <span class="login-danger">*</span></label>
                                     <input class="form-control pass-input" id="password-form" type="password" name="password" required>
