@@ -7,9 +7,13 @@
 
     <title>FSTG - Connexion</title>
 
-    <!-- CSS Styles -->
+    <!-- Icon of FSTg -->
     <link rel="shortcut icon" href="https://ecampus-fst.uca.ma/pluginfile.php/1/theme_moove/favicon/1739555045/logo-universite-cadi-ayyad-marrakech-uca%20%281%29.ico">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css">
@@ -17,7 +21,6 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="error-page">
-
     <div class="main-wrapper">
         <div class="error-box">
             <img src="../assets/img/error404.svg" style="height: 450px;" alt="logo of 404 page">
@@ -43,11 +46,8 @@
             }
             ?>" class="btn btn-primary">Back to Home</a>
         </div>
-
-
     </div>
     <!-- Script file -->
     <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
