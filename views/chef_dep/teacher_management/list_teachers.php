@@ -119,10 +119,10 @@
                                         </th>
                                         <th>Nom</th>
                                         <th>CIN</th>
-                                        <th>Département</th>
+                                        <th>Département</th>U
                                         <th>Numéro de téléphone</th>
                                         <th>Email Académique</th>
-                                        <th>Action</th>
+                                        <th>Actions</th>
                                     </tr>
                                     </thead>
                                     <tbody>
