@@ -150,12 +150,12 @@ CREATE TABLE `filiere` (
 --
 
 INSERT INTO `filiere` (`id`, `nom`, `nom_complet`, `type`, `niveau`, `id_coordinator`, `id_dep`) VALUES
-(1, 'IRISI', 'Ingénierie en Réseaux Informatique et Systèmes Information', 'Cycle ingénieur', 1, 2, 1),
-(2, 'IRISI', 'Ingénierie en Réseaux Informatique et Systèmes Information', 'Cycle ingénieur', 2, 2, 1),
-(3, 'IRISI', 'Ingénierie en Réseaux Informatique et Systèmes Information', 'Cycle ingénieur', 3, 2, 1),
-(4, 'SIT', 'Sécurité IT', 'Cycle ingénieur', 1, 3, 1),
-(5, 'SIT', 'Sécurité IT', 'Cycle ingénieur', 2, 3, 1),
-(6, 'SIT', 'Sécurité IT', 'Cycle ingénieur', 3, 3, 1);
+(1, 'IRISI1', 'Ingénierie en Réseaux Informatique et Systèmes Information', 'Cycle ingénieur', 1, 2, 1),
+(2, 'IRISI2', 'Ingénierie en Réseaux Informatique et Systèmes Information', 'Cycle ingénieur', 2, 2, 1),
+(3, 'IRISI3', 'Ingénierie en Réseaux Informatique et Systèmes Information', 'Cycle ingénieur', 3, 2, 1),
+(4, 'SIT1', 'Sécurité IT', 'Cycle ingénieur', 1, 3, 1),
+(5, 'SIT2', 'Sécurité IT', 'Cycle ingénieur', 2, 3, 1),
+(6, 'SIT3', 'Sécurité IT', 'Cycle ingénieur', 3, 3, 1);
 
 -- ---------------------------------------------------------------------------------
 
