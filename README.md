@@ -26,4 +26,5 @@ on a pas la page de l'inscription parce que tous les étudiants ont déjà les e
 - **DataTables** : https://datatables.net/
 - **sweetalert2** : https://sweetalert2.github.io/
 - **toastr** : https://github.com/CodeSeven/toastr
-  
+  "# FSTg-Management-System" 
+"# FST-Marrakech-Management-System" 
