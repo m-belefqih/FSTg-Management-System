@@ -168,7 +168,7 @@ CREATE TABLE `module` (
   `nom` varchar(100) NOT NULL,
   `semestre` enum('1','2') NOT NULL,
   `id_filiere` int(11) NOT NULL,    -- la filière qui contient le module
-  `id_teacher` int(11) NOT NULL,    -- le professeur qui enseigne le module
+  `id_teacher` int(11) DEFAULT NULL,    -- le professeur qui enseigne le module
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
