@@ -39,74 +39,68 @@ function findAll(): ?array
 //    }
 //}
 
-//function create($nom, $prenom, $genre, $dateNaissance, $email, $CIN, $role, $phone): bool
-//{
-//    global $conn;
-//    $query = "INSERT INTO user (nom, prenom, genre, dateNaissance, email, CIN, id_role, phone, id_dep, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-//
-//    try {
-//        $currentDateTime = date('Y-m-d H:i:s'); // Example: 2025-04-29 15:04:10
-//        $sqlState = $conn->prepare($query);
-//        return $sqlState->execute([
-//            $nom,
-//            $prenom,
-//            $genre,
-//            $dateNaissance,
-//            $email,
-//            $CIN,
-//            $role,
-//            $phone,
-//            $_SESSION['user_data']['id_dep'],
-//            $currentDateTime
-//        ]);
-//
-//    } catch (PDOException $e) {
-//        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt', date('Y-m-d H:i:s') . " - Erreur lors de l'insertion : " . $e->getMessage() . "\n", FILE_APPEND);
-//        return false;
-//    }
-//}
+function create($nom, $semestre, $id_filiere, $id_teacher): bool
+{
+    global $conn;
+    $query = "INSERT INTO module (nom, semestre, id_filiere, id_teacher) VALUES (?, ?, ?, ?)";
 
-//function edit($id, $nom, $prenom, $genre, $dateNaissance, $email, $CIN, $role, $phone): bool
-//{
-//    global $conn;
-//    try {
-//        $query = "UPDATE user SET nom = ?, prenom = ?, genre = ?, dateNaissance = ?, email = ?, CIN = ?, id_role = ?, phone = ? WHERE id = ?";
-//        $stmt = $conn->prepare($query);
-//        return $stmt->execute([$nom, $prenom, $genre, $dateNaissance, $email, $CIN, $role, $phone, $id]);
-//    } catch (PDOException $e) {
-//        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
-//            date('Y-m-d H:i:s') . " - Erreur lors de la modification : " . $e->getMessage() . "\n",
-//            FILE_APPEND);
-//        return false;
-//    }
-//}
-//function delete($id): bool
-//{
-//    global $conn;
-//    try {
-//        $query = "DELETE FROM user WHERE id = ?";
-//        $stmt = $conn->prepare($query);
-//        return $stmt->execute([$id]);
-//    } catch (PDOException $e) {
-//        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
-//            date('Y-m-d H:i:s') . " - Erreur lors de la suppression : " . $e->getMessage() . "\n",
-//            FILE_APPEND);
-//        return false;
-//    }
-//}
+    try {
+        $stmt = $conn->prepare($query);
+        return $stmt->execute([$nom, $semestre, $id_filiere, $id_teacher]);
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de l'insertion du module : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return false;
+    }
+}
 
-//function view($id): ?array
-//{
-//    global $conn;
-//    try {
-//        $query = "SELECT * FROM user WHERE id = ?";
-//        $stmt = $conn->prepare($query);
-//        $stmt->execute([$id]);
-//        return $stmt->fetch(PDO::FETCH_ASSOC);
-//    } catch (PDOException $e) {
-//        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
-//            date('Y-m-d H:i:s') . " - Erreur lors de la récupération des données : " . $e->getMessage() . "\n",
-//            FILE_APPEND);
-//        return null;
-//    }
-//}
+function edit($id, $nom, $semestre, $id_filiere, $id_teacher): bool
+{
+    global $conn;
+    try {
+        $query = "UPDATE module SET nom = ?, semestre = ?, id_filiere = ?, id_teacher = ? WHERE id = ?";
+        $stmt = $conn->prepare($query);
+        return $stmt->execute([$nom, $semestre, $id_filiere, $id_teacher, $id]);
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de la modification du module : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return false;
+    }
+}
+
+function delete($id): bool
+{
+    global $conn;
+    try {
+        $query = "DELETE FROM module WHERE id = ?";
+        $stmt = $conn->prepare($query);
+        return $stmt->execute([$id]);
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de la suppression du module : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return false;
+    }
+}
+
+function view($id): ?array
+{
+    global $conn;
+    try {
+        $query = "SELECT m.*, f.nom as nom_filiere, f.niveau as niveau_filiere, d.nom as nom_departement 
+                 FROM module m 
+                 JOIN filiere f ON m.id_filiere = f.id 
+                 JOIN departement d ON f.id_dep = d.id 
+                 WHERE m.id = ?";
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de la récupération des données du module : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
