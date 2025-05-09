@@ -19,86 +19,78 @@ function indexAction(): void
 // Function to get the page for creating a new module
 function createAction(): void
 {
+    $filieres = getFilieres($_SESSION['user_data']['id_dep']);
     require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/module_management/create.php');
 }
 
-// Function to store a new teacher
-//function storeAction(): void
-//{
-//    $nom = htmlentities($_POST['nom']);
-//    $prenom  = htmlentities($_POST['prenom']);
-//    $genre  = htmlentities($_POST['genre']);
-//    $dateNaissance = date('Y-m-d', strtotime(htmlentities($_POST['dateNaissance']))); // Format the date to Y-m-d
-//    $email  = htmlentities($_POST['email']);
-//    $CIN  = htmlentities($_POST['CIN']);
-//    $role  = htmlentities($_POST['role']);
-//    $phone  = htmlentities($_POST['phone']);
-//
-//    // Verify if the email is already exist
-//    if (checkEmail($email)) {
-//        $_SESSION['error'] = "Cette email existe déjà";
-//        $_SESSION['messageEmail'] = $email;
-//        header('Location: index.php?action=create');
-//        exit();
-//    }
-//
-//    $test = create($nom, $prenom, $genre, $dateNaissance, $email, $CIN, $role, $phone);
-//
-//    file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
-//        date('Y-m-d H:i:s') . " - Etat de l'insertion de user : " . $test . "\n",
-//        FILE_APPEND
-//    );
-//
-//    if($test){
-//        $_SESSION['success'] = "Enseignant a été ajouté avec succès";
-//    }else {
-//        $_SESSION['error'] = "Échec de la suppression";
-//    }
-//
-//    header('Location: index.php?action=list');
-//}
+// Function to store a new module
+function storeAction(): void
+{
+    $nom = htmlentities($_POST['nom']);
+    $id_filiere = htmlentities($_POST['id_filiere']);
+    $semestre = htmlentities($_POST['semestre']);
 
-// Function to get the page for editing a teacher
-//function editAction(): void
-//{
-//    $id = $_GET['id'];
-//    $user = view($id); // $user is an associative array
-//    require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/teacher_management/edit.php');
-//}
+    // Vérifier si le module existe déjà pour cette filière
+    $test1 = isExist($nom, $id_filiere);
 
-// Function to update a teacher
-//function updateAction(): void
-//{
-//    $id = htmlentities($_POST['id']);
-//    $nom = htmlentities($_POST['nom']);
-//    $prenom  = htmlentities($_POST['prenom']);
-//    $genre  = htmlentities($_POST['genre']);
-//    $dateNaissance = date('Y-m-d', strtotime(htmlentities($_POST['dateNaissance']))); // Format the date to Y-m-d
-//    $email  = htmlentities($_POST['email']);
-//    $CIN  = htmlentities($_POST['CIN']);
-//    $role  = htmlentities($_POST['role']);
-//    $phone  = htmlentities($_POST['phone']);
-//
-//    $test = edit($id, $nom, $prenom, $genre, $dateNaissance, $email, $CIN, $role, $phone);
-//
-//    if($test){
-//        $_SESSION['success'] = "Modification réussie";
-//    } else {
-//        $_SESSION['error'] = "Échec de la modification";
-//    }
-//
-//    header('location:index.php?action=list');
-//}
+    if ($test1) {
+        $_SESSION['error'] = "Ce module existe déjà pour cette filière";
+        header('Location: index.php?action=create');
+        exit();
+    }
 
-// Function to delete a teacher
-//function deleteAction(): void
-//{
-//    $test = delete($_GET['id']);
-//
-//    if($test){
-//        $_SESSION['success'] = "Suppression réussie";
-//    } else {
-//        $_SESSION['error'] = "Échec de la suppression";
-//    }
-//    header('location:index.php?action=list');
-//}
+    // Sinon, insérer le nouveau module
+    $test2 = create($nom, $semestre, $id_filiere);
+
+    if ($test2) {
+        $_SESSION['success'] = "Module ajouté avec succès";
+        header('Location: index.php?action=list');
+    } else {
+        $_SESSION['error'] = "Erreur lors de l'ajout du module";
+        header('Location: index.php?action=create');
+    }
+
+    exit();
+}
+
+// Function to get the page for editing a module
+function editAction(): void
+{
+    $module = array();
+    $module = view($_GET['id']); // $module is an associative array
+    $filieres = getFilieres($_SESSION['user_data']['id_dep']);
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/module_management/edit.php');
+}
+
+// Function to update a module
+function updateAction(): void
+{
+    $id = htmlentities($_POST['id']);
+    $nom = htmlentities($_POST['nom']);
+    $id_filiere = htmlentities($_POST['id_filiere']);
+    $semestre = htmlentities($_POST['semestre']);
+
+    $test = edit($id, $nom, $id_filiere, $semestre);
+
+    if ($test) {
+        $_SESSION['success'] = "Module modifié avec succès";
+    } else {
+        $_SESSION['error'] = "Erreur lors de la modification du module";
+    }
+
+    header('Location: index.php?action=list');
+    exit();
+}
+
+// Function to delete a module
+function deleteAction(): void
+{
+    $test = delete($_GET['id']);
+
+    if($test){
+        $_SESSION['success'] = "Module supprimé avec succès";
+    } else {
+        $_SESSION['error'] = "Échec de la suppression du module";
+    }
+    header('Location: index.php?action=list');
+}
