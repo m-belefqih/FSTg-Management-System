@@ -19,12 +19,14 @@ function indexAction(): void
 // Function to get the page for creating a new module
 function createAction(): void
 {
+    $filieres = getFilieres($_SESSION['user_data']['id_dep']);
     require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/module_management/create.php');
 }
 
 // Function to store a new module
 function storeAction(): void
 {
+<<<<<<< HEAD
     if (!isset($_POST['nom']) || !isset($_POST['semestre']) || !isset($_POST['id_filiere']) || !isset($_POST['id_teacher'])) {
         $_SESSION['error'] = "Tous les champs sont requis";
         header('Location: index.php?action=create');
@@ -141,6 +143,65 @@ function updateAction(): void
 }
 
 // Function to delete a teacher
+=======
+    $nom = htmlentities($_POST['nom']);
+    $id_filiere = htmlentities($_POST['id_filiere']);
+    $semestre = htmlentities($_POST['semestre']);
+
+    // Vérifier si le module existe déjà pour cette filière
+    $test1 = isExist($nom, $id_filiere);
+
+    if ($test1) {
+        $_SESSION['error'] = "Ce module existe déjà pour cette filière";
+        header('Location: index.php?action=create');
+        exit();
+    }
+
+    // Sinon, insérer le nouveau module
+    $test2 = create($nom, $semestre, $id_filiere);
+
+    if ($test2) {
+        $_SESSION['success'] = "Module ajouté avec succès";
+        header('Location: index.php?action=list');
+    } else {
+        $_SESSION['error'] = "Erreur lors de l'ajout du module";
+        header('Location: index.php?action=create');
+    }
+
+    exit();
+}
+
+// Function to get the page for editing a module
+function editAction(): void
+{
+    $module = array();
+    $module = view($_GET['id']); // $module is an associative array
+    $filieres = getFilieres($_SESSION['user_data']['id_dep']);
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/module_management/edit.php');
+}
+
+// Function to update a module
+function updateAction(): void
+{
+    $id = htmlentities($_POST['id']);
+    $nom = htmlentities($_POST['nom']);
+    $id_filiere = htmlentities($_POST['id_filiere']);
+    $semestre = htmlentities($_POST['semestre']);
+
+    $test = edit($id, $nom, $id_filiere, $semestre);
+
+    if ($test) {
+        $_SESSION['success'] = "Module modifié avec succès";
+    } else {
+        $_SESSION['error'] = "Erreur lors de la modification du module";
+    }
+
+    header('Location: index.php?action=list');
+    exit();
+}
+
+// Function to delete a module
+>>>>>>> db87a5ab0b87a555fe4f82d5cb1fd03e5de7b323
 function deleteAction(): void
 {
     $test = delete($_GET['id']);

@@ -96,11 +96,10 @@
                 <div class="col-sm-12">
                     <div class="card card-table comman-shadow">
                         <div class="card-body">
-
                             <div class="page-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h3 class="page-title">Enseignants</h3>
+                                        <h3 class="page-title">Enseignants du Département <?php if(!empty($teachers)) { echo $teachers[0]['nom_departement'];} ?></h3>
                                     </div>
                                     <div class="col-auto text-end float-end ms-auto download-grp">
                                         <a href="/FSTg-Management-System/controllers/downloadCSV_controller.php" class="btn btn-outline-primary me-2"><i class="fas fa-download"></i> Télécharger</a>
@@ -119,9 +118,9 @@
                                         </th>
                                         <th>Nom</th>
                                         <th>CIN</th>
-                                        <th>Département</th>U
                                         <th>Numéro de téléphone</th>
                                         <th>Email Académique</th>
+                                        <th>Rôle</th>
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
@@ -142,9 +141,17 @@
                                                     </h2>
                                                 </td>
                                                 <td><?php echo $teacher['CIN'] ?></td>
-                                                <td><?php echo $teacher['departement_nom'] ?></td>
                                                 <td><?php echo $teacher['phone'] ?></td>
                                                 <td><?php echo $teacher['email'] ?></td>
+                                                <td>
+                                                    <?php if($teacher['id_role'] == '3'): ?>
+                                                        Professeur
+                                                    <?php elseif($teacher['id_role'] == '2' && $teacher['genre'] == 'male'): ?>
+                                                        Coordinateur
+                                                    <?php elseif($teacher['id_role'] == '2' && $teacher['genre'] == 'female'): ?>
+                                                        Coordinatrice
+                                                    <?php endif; ?>
+                                                </td>
                                                 <td class="text-end">
                                                     <div class="actions ">
                                                         <a href="index.php?action=edit&id=<?php echo $teacher['id']; ?>" class="btn btn-sm bg-danger-light">

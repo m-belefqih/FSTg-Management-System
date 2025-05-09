@@ -4,7 +4,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/config/DB_connectio
 function findAll(): ?array
 {
     global $conn;
-    $query = "SELECT user.*, departement.nom AS departement_nom
+    $query = "SELECT user.*, departement.nom AS nom_departement
         FROM user
         INNER JOIN departement ON user.id_dep = departement.id
         WHERE (id_role = '3' OR id_role = '2') AND user.id_dep = ?";

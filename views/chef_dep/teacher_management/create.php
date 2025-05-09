@@ -95,7 +95,7 @@
                                     </div>
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
-                                            <label>Rôle </label>
+                                            <label>Rôle <span class="login-danger">*</span></label>
                                             <select class="form-control select" name="role" required>
                                                 <option value="3">Professeur</option>
                                                 <option value="2">Coordinateur (f. Coordinatrice)  </option>
@@ -116,7 +116,7 @@
                                     </div>
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
-                                            <label>Numéro de téléphone </label>
+                                            <label>Numéro de téléphone <span class="login-danger">*</span></label>
                                             <input class="form-control" type="text" name="phone" required>
                                         </div>
                                     </div>
