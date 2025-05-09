@@ -95,7 +95,7 @@
                             <div class="page-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h3 class="page-title">Modules</h3>
+                                        <h3 class="page-title">Modules du Département <?php if(!empty($modules)) { echo $modules[0]['nom_departement'];} ?></h3>
                                     </div>
                                     <div class="col-auto text-end float-end ms-auto download-grp">
                                         <a href="/FSTg-Management-System/controllers/downloadCSV_controller.php" class="btn btn-outline-primary me-2"><i class="fas fa-download"></i> Télécharger</a>
@@ -116,7 +116,6 @@
                                         <th>Filière</th>
                                         <th>Niveau</th>
                                         <th>Semestre</th>
-                                        <th>Département</th>
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
@@ -146,12 +145,11 @@
                                                 </td>
                                                 <td>
                                                     <?php if($module['semestre_module'] == 1): ?>
-                                                        1<sup>er</sup> semestre
+                                                        Semestre 1
                                                     <?php elseif($module['semestre_module'] == 2): ?>
-                                                        2<sup>ème</sup> semestre
+                                                        Semestre 2
                                                     <?php endif; ?>
                                                 </td>
-                                                <td><?php echo $module['nom_departement'] ?></td>
                                                 <td class="text-end">
                                                     <div class="actions ">
                                                         <a href="index.php?action=edit&id=<?php echo $module['id']; ?>" class="btn btn-sm bg-danger-light">
