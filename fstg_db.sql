@@ -19,6 +19,7 @@ SET time_zone = "+00:00";
 -- Database:  `fstg_db`
 -- 
 
+DROP DATABASE IF EXISTS fstg_db;
 CREATE DATABASE IF NOT EXISTS fstg_db;
 
 USE fstg_db;
