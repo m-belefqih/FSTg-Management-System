@@ -38,31 +38,6 @@ function getFilieres($id): ?array
     }
 }
 
-<<<<<<< HEAD
-function create($nom, $semestre, $id_filiere, $id_teacher): bool
-{
-    global $conn;
-    $query = "INSERT INTO module (nom, semestre, id_filiere, id_teacher) VALUES (?, ?, ?, ?)";
-
-    try {
-        $stmt = $conn->prepare($query);
-        return $stmt->execute([$nom, $semestre, $id_filiere, $id_teacher]);
-    } catch (PDOException $e) {
-        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
-            date('Y-m-d H:i:s') . " - Erreur lors de l'insertion du module : " . $e->getMessage() . "\n",
-            FILE_APPEND);
-        return false;
-    }
-}
-
-function edit($id, $nom, $semestre, $id_filiere, $id_teacher): bool
-{
-    global $conn;
-    try {
-        $query = "UPDATE module SET nom = ?, semestre = ?, id_filiere = ?, id_teacher = ? WHERE id = ?";
-        $stmt = $conn->prepare($query);
-        return $stmt->execute([$nom, $semestre, $id_filiere, $id_teacher, $id]);
-=======
 function isExist($nom, $id_filiere): bool
 {
     global $conn;
@@ -104,7 +79,6 @@ function edit($id, $nom, $id_filiere, $semestre): bool
         $query = "UPDATE module SET nom = ?, id_filiere = ?, semestre = ? WHERE id = ?";
         $stmt = $conn->prepare($query);
         return $stmt->execute([$nom, $id_filiere, $semestre, $id]);
->>>>>>> db87a5ab0b87a555fe4f82d5cb1fd03e5de7b323
     } catch (PDOException $e) {
         file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
             date('Y-m-d H:i:s') . " - Erreur lors de la modification du module : " . $e->getMessage() . "\n",
@@ -132,18 +106,10 @@ function view($id): ?array
 {
     global $conn;
     try {
-<<<<<<< HEAD
-        $query = "SELECT m.*, f.nom as nom_filiere, f.niveau as niveau_filiere, d.nom as nom_departement 
-                 FROM module m 
-                 JOIN filiere f ON m.id_filiere = f.id 
-                 JOIN departement d ON f.id_dep = d.id 
-                 WHERE m.id = ?";
-=======
         $query = "SELECT m.id as id, m.nom as nom, m.semestre as semestre, f.id as id_filiere 
               FROM module m 
               JOIN filiere f ON m.id_filiere = f.id 
               WHERE m.id = ?";
->>>>>>> db87a5ab0b87a555fe4f82d5cb1fd03e5de7b323
         $stmt = $conn->prepare($query);
         $stmt->execute([$id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);

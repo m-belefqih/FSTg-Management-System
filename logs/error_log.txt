@@ -1,307 +1,111 @@
-2025-05-08 22:50:38 - Successfully connected to database!
-2025-05-08 22:51:25 - Successfully connected to database!
-2025-05-08 22:51:25 - Successfully connected to database!
-2025-05-08 22:51:25 - Information of user : {"id":"1","prenom":"Kaloun","nom":"Soulaimane","genre":"male","dateNaissance":"1990-09-01","email":"so.kaloun@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12345","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"1","id_dep":"1","id_filiere":null}
-2025-05-08 22:51:25 - Successfully connected to database!
-2025-05-08 22:51:25 - Successfully connected to database!
-2025-05-08 22:51:37 - Successfully connected to database!
-2025-05-08 22:51:37 - Successfully connected to database!
-2025-05-08 22:51:37 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:51:37 - Successfully connected to database!
-2025-05-08 22:51:43 - Successfully connected to database!
-2025-05-08 22:51:43 - Successfully connected to database!
-2025-05-08 22:51:43 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:51:43 - Successfully connected to database!
-2025-05-08 22:51:46 - Successfully connected to database!
-2025-05-08 22:51:46 - Successfully connected to database!
-2025-05-08 22:51:48 - Successfully connected to database!
-2025-05-08 22:51:48 - Successfully connected to database!
-2025-05-08 22:51:48 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:51:48 - Successfully connected to database!
-2025-05-08 22:51:59 - Successfully connected to database!
-2025-05-08 22:51:59 - Successfully connected to database!
-2025-05-08 22:52:01 - Successfully connected to database!
-2025-05-08 22:52:01 - Successfully connected to database!
-2025-05-08 22:52:01 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:52:01 - Successfully connected to database!
-2025-05-08 22:53:02 - Successfully connected to database!
-2025-05-08 22:53:02 - Successfully connected to database!
-2025-05-08 22:53:15 - Successfully connected to database!
-2025-05-08 22:53:15 - Successfully connected to database!
-2025-05-08 22:53:15 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:53:15 - Successfully connected to database!
-2025-05-08 22:53:52 - Successfully connected to database!
-2025-05-08 22:53:52 - Successfully connected to database!
-2025-05-08 22:53:54 - Successfully connected to database!
-2025-05-08 22:53:54 - Successfully connected to database!
-2025-05-08 22:53:54 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:53:54 - Successfully connected to database!
-2025-05-08 22:55:02 - Successfully connected to database!
-2025-05-08 22:55:02 - Successfully connected to database!
-2025-05-08 22:55:03 - Successfully connected to database!
-2025-05-08 22:55:03 - Successfully connected to database!
-2025-05-08 22:55:03 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:55:03 - Successfully connected to database!
-2025-05-08 22:58:18 - Successfully connected to database!
-2025-05-08 22:58:18 - Successfully connected to database!
-2025-05-08 22:58:18 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:58:18 - Successfully connected to database!
-2025-05-08 22:58:20 - Successfully connected to database!
-2025-05-08 22:58:20 - Successfully connected to database!
-2025-05-08 22:58:20 - Successfully connected to database!
-2025-05-08 22:58:24 - Successfully connected to database!
-2025-05-08 22:58:24 - Successfully connected to database!
-2025-05-08 22:58:24 - Successfully connected to database!
-2025-05-08 22:58:25 - Successfully connected to database!
-2025-05-08 22:58:25 - Successfully connected to database!
-2025-05-08 22:58:25 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:58:25 - Successfully connected to database!
-2025-05-08 22:58:26 - Successfully connected to database!
-2025-05-08 22:58:26 - Successfully connected to database!
-2025-05-08 22:58:26 - Successfully connected to database!
-2025-05-08 22:58:28 - Successfully connected to database!
-2025-05-08 22:58:28 - Successfully connected to database!
-2025-05-08 22:58:28 - List of modules : [{"id":"6","nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:58:28 - Successfully connected to database!
-2025-05-08 22:58:31 - Successfully connected to database!
-2025-05-08 22:58:31 - Successfully connected to database!
-2025-05-08 22:58:31 - Successfully connected to database!
-2025-05-08 22:58:31 - Successfully connected to database!
-2025-05-08 22:58:31 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:58:31 - Successfully connected to database!
-2025-05-08 22:58:34 - Successfully connected to database!
-2025-05-08 22:58:34 - Successfully connected to database!
-2025-05-08 22:58:34 - Successfully connected to database!
-2025-05-08 22:58:35 - Successfully connected to database!
-2025-05-08 22:58:35 - Successfully connected to database!
-2025-05-08 22:58:35 - Successfully connected to database!
-2025-05-08 22:58:37 - Successfully connected to database!
-2025-05-08 22:58:37 - Successfully connected to database!
-2025-05-08 22:58:37 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:58:37 - Successfully connected to database!
-2025-05-08 22:58:39 - Successfully connected to database!
-2025-05-08 22:58:39 - Successfully connected to database!
-2025-05-08 22:58:42 - Successfully connected to database!
-2025-05-08 22:58:42 - Successfully connected to database!
-2025-05-08 22:58:42 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 22:58:42 - Successfully connected to database!
-2025-05-08 23:01:29 - Successfully connected to database!
-2025-05-08 23:01:29 - Successfully connected to database!
-2025-05-08 23:01:29 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:01:29 - Successfully connected to database!
-2025-05-08 23:01:31 - Successfully connected to database!
-2025-05-08 23:01:31 - Successfully connected to database!
-2025-05-08 23:01:31 - Successfully connected to database!
-2025-05-08 23:01:33 - Successfully connected to database!
-2025-05-08 23:01:33 - Successfully connected to database!
-2025-05-08 23:01:33 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:01:33 - Successfully connected to database!
-2025-05-08 23:01:35 - Successfully connected to database!
-2025-05-08 23:01:35 - Successfully connected to database!
-2025-05-08 23:01:35 - Successfully connected to database!
-2025-05-08 23:01:36 - Successfully connected to database!
-2025-05-08 23:01:36 - Successfully connected to database!
-2025-05-08 23:01:36 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:01:36 - Successfully connected to database!
-2025-05-08 23:01:39 - Successfully connected to database!
-2025-05-08 23:01:39 - Successfully connected to database!
-2025-05-08 23:01:39 - Successfully connected to database!
-2025-05-08 23:02:04 - Successfully connected to database!
-2025-05-08 23:02:04 - Successfully connected to database!
-2025-05-08 23:02:04 - Successfully connected to database!
-2025-05-08 23:02:04 - Successfully connected to database!
-2025-05-08 23:02:04 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:02:04 - Successfully connected to database!
-2025-05-08 23:03:17 - Successfully connected to database!
-2025-05-08 23:03:17 - Successfully connected to database!
-2025-05-08 23:03:17 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:03:17 - Successfully connected to database!
-2025-05-08 23:03:18 - Successfully connected to database!
-2025-05-08 23:03:18 - Successfully connected to database!
-2025-05-08 23:03:18 - Successfully connected to database!
-2025-05-08 23:03:39 - Successfully connected to database!
-2025-05-08 23:03:39 - Successfully connected to database!
-2025-05-08 23:03:39 - Successfully connected to database!
-2025-05-08 23:03:39 - Successfully connected to database!
-2025-05-08 23:03:39 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:03:39 - Successfully connected to database!
-2025-05-08 23:03:54 - Successfully connected to database!
-2025-05-08 23:03:54 - Successfully connected to database!
-2025-05-08 23:03:54 - Successfully connected to database!
-2025-05-08 23:04:00 - Successfully connected to database!
-2025-05-08 23:04:00 - Successfully connected to database!
-2025-05-08 23:04:01 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:04:01 - Successfully connected to database!
-2025-05-08 23:04:08 - Successfully connected to database!
-2025-05-08 23:04:08 - Successfully connected to database!
-2025-05-08 23:04:08 - Successfully connected to database!
-2025-05-08 23:04:11 - Successfully connected to database!
-2025-05-08 23:04:11 - Successfully connected to database!
-2025-05-08 23:04:11 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:04:11 - Successfully connected to database!
-2025-05-08 23:04:15 - Successfully connected to database!
-2025-05-08 23:04:15 - Successfully connected to database!
-2025-05-08 23:05:51 - Successfully connected to database!
-2025-05-08 23:05:51 - Successfully connected to database!
-2025-05-08 23:05:51 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:05:51 - Successfully connected to database!
-2025-05-08 23:05:54 - Successfully connected to database!
-2025-05-08 23:05:54 - Successfully connected to database!
-2025-05-08 23:05:54 - Successfully connected to database!
-2025-05-08 23:06:18 - Successfully connected to database!
-2025-05-08 23:06:18 - Successfully connected to database!
-2025-05-08 23:06:18 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:06:18 - Successfully connected to database!
-2025-05-08 23:06:25 - Successfully connected to database!
-2025-05-08 23:06:25 - Successfully connected to database!
-2025-05-08 23:06:25 - Successfully connected to database!
-2025-05-08 23:06:50 - Successfully connected to database!
-2025-05-08 23:06:50 - Successfully connected to database!
-2025-05-08 23:06:50 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:06:50 - Successfully connected to database!
-2025-05-08 23:06:52 - Successfully connected to database!
-2025-05-08 23:06:52 - Successfully connected to database!
-2025-05-08 23:07:04 - Successfully connected to database!
-2025-05-08 23:07:04 - Successfully connected to database!
-2025-05-08 23:07:04 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:07:04 - Successfully connected to database!
-2025-05-08 23:07:09 - Successfully connected to database!
-2025-05-08 23:07:09 - Successfully connected to database!
-2025-05-08 23:07:34 - Successfully connected to database!
-2025-05-08 23:07:34 - Successfully connected to database!
-2025-05-08 23:07:34 - List of modules : [{"id":"7","nom_module":"Cryptographie","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:07:34 - Successfully connected to database!
-2025-05-08 23:07:38 - Successfully connected to database!
-2025-05-08 23:07:38 - Successfully connected to database!
-2025-05-08 23:07:38 - Successfully connected to database!
-2025-05-08 23:07:38 - Successfully connected to database!
-2025-05-08 23:07:38 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"}]
-2025-05-08 23:07:38 - Successfully connected to database!
-2025-05-08 23:07:55 - Successfully connected to database!
-2025-05-08 23:07:55 - Successfully connected to database!
-2025-05-08 23:07:55 - Successfully connected to database!
-2025-05-08 23:08:17 - Successfully connected to database!
-2025-05-08 23:08:17 - Successfully connected to database!
-2025-05-08 23:08:17 - Successfully connected to database!
-2025-05-08 23:08:17 - Successfully connected to database!
-2025-05-08 23:08:17 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-08 23:08:17 - Successfully connected to database!
-2025-05-08 23:32:41 - Successfully connected to database!
-2025-05-08 23:32:41 - Successfully connected to database!
-2025-05-08 23:32:43 - Successfully connected to database!
-2025-05-08 23:32:43 - Successfully connected to database!
-2025-05-08 23:32:43 - List of teachers : [{"id":"3","prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"2","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"4","prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"5","prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"17","prenom":"Rizki","nom":"Abdelhadi","genre":"male","dateNaissance":"2025-05-14","email":"rizki@gmail.com","password":null,"CNE":null,"CIN":"D332412","phone":"0659030899","created_at":"2025-05-08 18:16:47","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"}]
-2025-05-08 23:32:43 - Successfully connected to database!
-2025-05-08 23:32:45 - Successfully connected to database!
-2025-05-08 23:32:45 - Successfully connected to database!
-2025-05-08 23:32:51 - Successfully connected to database!
-2025-05-08 23:32:51 - Successfully connected to database!
-2025-05-08 23:32:51 - List of teachers : [{"id":"3","prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"2","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"4","prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"5","prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"17","prenom":"Rizki","nom":"Abdelhadi","genre":"male","dateNaissance":"2025-05-14","email":"rizki@gmail.com","password":null,"CNE":null,"CIN":"D332412","phone":"0659030899","created_at":"2025-05-08 18:16:47","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"}]
-2025-05-08 23:32:51 - Successfully connected to database!
-2025-05-08 23:32:52 - Successfully connected to database!
-2025-05-08 23:32:52 - Successfully connected to database!
-2025-05-08 23:32:52 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-08 23:32:52 - Successfully connected to database!
-2025-05-08 23:32:57 - Successfully connected to database!
-2025-05-08 23:32:57 - Successfully connected to database!
-2025-05-08 23:32:57 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-08 23:32:57 - Successfully connected to database!
-2025-05-08 23:32:58 - Successfully connected to database!
-2025-05-08 23:32:58 - Successfully connected to database!
-2025-05-08 23:32:58 - List of teachers : [{"id":"3","prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"2","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"4","prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"5","prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"17","prenom":"Rizki","nom":"Abdelhadi","genre":"male","dateNaissance":"2025-05-14","email":"rizki@gmail.com","password":null,"CNE":null,"CIN":"D332412","phone":"0659030899","created_at":"2025-05-08 18:16:47","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"}]
-2025-05-08 23:32:58 - Successfully connected to database!
-2025-05-08 23:32:59 - Successfully connected to database!
-2025-05-08 23:32:59 - Successfully connected to database!
-2025-05-08 23:33:24 - Successfully connected to database!
-2025-05-08 23:33:24 - Successfully connected to database!
-2025-05-08 23:33:35 - Successfully connected to database!
-2025-05-08 23:33:35 - Successfully connected to database!
-2025-05-08 23:33:35 - List of teachers : [{"id":"3","prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"2","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"4","prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"5","prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"17","prenom":"Rizki","nom":"Abdelhadi","genre":"male","dateNaissance":"2025-05-14","email":"rizki@gmail.com","password":null,"CNE":null,"CIN":"D332412","phone":"0659030899","created_at":"2025-05-08 18:16:47","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"}]
-2025-05-08 23:33:35 - Successfully connected to database!
-2025-05-08 23:33:41 - Successfully connected to database!
-2025-05-08 23:33:41 - Successfully connected to database!
-2025-05-08 23:33:41 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-08 23:33:41 - Successfully connected to database!
-2025-05-08 23:33:45 - Successfully connected to database!
-2025-05-08 23:33:45 - Successfully connected to database!
-2025-05-08 23:33:45 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-08 23:33:45 - Successfully connected to database!
-2025-05-08 23:33:47 - Successfully connected to database!
-2025-05-08 23:33:47 - Successfully connected to database!
-2025-05-08 23:33:50 - Successfully connected to database!
-2025-05-08 23:33:50 - Successfully connected to database!
-2025-05-08 23:33:50 - List of teachers : [{"id":"3","prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"2","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"4","prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"5","prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"17","prenom":"Rizki","nom":"Abdelhadi","genre":"male","dateNaissance":"2025-05-14","email":"rizki@gmail.com","password":null,"CNE":null,"CIN":"D332412","phone":"0659030899","created_at":"2025-05-08 18:16:47","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"}]
-2025-05-08 23:33:50 - Successfully connected to database!
-2025-05-08 23:33:53 - Successfully connected to database!
-2025-05-08 23:33:53 - Successfully connected to database!
-2025-05-08 23:33:53 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-08 23:33:53 - Successfully connected to database!
-2025-05-08 23:33:57 - Successfully connected to database!
-2025-05-08 23:33:57 - Successfully connected to database!
-2025-05-08 23:33:57 - Successfully connected to database!
-2025-05-08 23:33:59 - Successfully connected to database!
-2025-05-08 23:33:59 - Successfully connected to database!
-2025-05-08 23:33:59 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-08 23:33:59 - Successfully connected to database!
-2025-05-08 23:34:10 - Successfully connected to database!
-2025-05-08 23:34:10 - Successfully connected to database!
-2025-05-08 23:35:32 - Successfully connected to database!
-2025-05-08 23:35:32 - Successfully connected to database!
-2025-05-08 23:36:17 - Successfully connected to database!
-2025-05-08 23:36:17 - Successfully connected to database!
-2025-05-08 23:36:23 - Successfully connected to database!
-2025-05-08 23:37:41 - Successfully connected to database!
-2025-05-08 23:37:44 - Successfully connected to database!
-2025-05-08 23:38:34 - Successfully connected to database!
-2025-05-08 23:38:34 - Successfully connected to database!
-2025-05-08 23:38:35 - Information of user : {"id":"1","prenom":"Kaloun","nom":"Soulaimane","genre":"male","dateNaissance":"1990-09-01","email":"so.kaloun@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12345","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"1","id_dep":"1","id_filiere":null}
-2025-05-08 23:38:35 - Successfully connected to database!
-2025-05-08 23:38:35 - Successfully connected to database!
-2025-05-08 23:39:10 - Successfully connected to database!
-2025-05-08 23:39:10 - Successfully connected to database!
-2025-05-08 23:39:11 - Successfully connected to database!
-2025-05-08 23:39:11 - Successfully connected to database!
-2025-05-08 23:39:11 - List of teachers : [{"id":"3","prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"2","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"4","prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"5","prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"17","prenom":"Rizki","nom":"Abdelhadi","genre":"male","dateNaissance":"2025-05-14","email":"rizki@gmail.com","password":null,"CNE":null,"CIN":"D332412","phone":"0659030899","created_at":"2025-05-08 18:16:47","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"}]
-2025-05-08 23:39:11 - Successfully connected to database!
-2025-05-08 23:39:29 - Successfully connected to database!
-2025-05-08 23:39:29 - Successfully connected to database!
-2025-05-08 23:39:29 - List of teachers : [{"id":"3","prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"2","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"4","prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"5","prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"17","prenom":"Rizki","nom":"Abdelhadi","genre":"male","dateNaissance":"2025-05-14","email":"rizki@gmail.com","password":null,"CNE":null,"CIN":"D332412","phone":"0659030899","created_at":"2025-05-08 18:16:47","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"}]
-2025-05-08 23:39:29 - Successfully connected to database!
-2025-05-08 23:39:30 - Successfully connected to database!
-2025-05-08 23:39:30 - Successfully connected to database!
-2025-05-08 23:39:30 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-08 23:39:30 - Successfully connected to database!
-2025-05-09 15:37:02 - Successfully connected to database!
-2025-05-09 15:37:24 - Successfully connected to database!
-2025-05-09 15:37:24 - Successfully connected to database!
-2025-05-09 15:37:24 - Information of user : {"id":"1","prenom":"Kaloun","nom":"Soulaimane","genre":"male","dateNaissance":"1990-09-01","email":"so.kaloun@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12345","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"1","id_dep":"1","id_filiere":null}
-2025-05-09 15:37:24 - Successfully connected to database!
-2025-05-09 15:37:24 - Successfully connected to database!
-2025-05-09 15:37:38 - Successfully connected to database!
-2025-05-09 15:37:38 - Successfully connected to database!
-2025-05-09 15:37:40 - Successfully connected to database!
-2025-05-09 15:37:40 - Successfully connected to database!
-2025-05-09 15:37:46 - Successfully connected to database!
-2025-05-09 15:37:46 - Successfully connected to database!
-2025-05-09 15:37:46 - List of teachers : [{"id":"3","prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"2","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"4","prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"5","prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"17","prenom":"Rizki","nom":"Abdelhadi","genre":"male","dateNaissance":"2025-05-14","email":"rizki@gmail.com","password":null,"CNE":null,"CIN":"D332412","phone":"0659030899","created_at":"2025-05-08 18:16:47","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"}]
-2025-05-09 15:37:46 - Successfully connected to database!
-2025-05-09 15:37:49 - Successfully connected to database!
-2025-05-09 15:37:49 - Successfully connected to database!
-2025-05-09 15:37:49 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-09 15:37:49 - Successfully connected to database!
-2025-05-09 15:37:54 - Successfully connected to database!
-2025-05-09 15:37:54 - Successfully connected to database!
-2025-05-09 16:20:37 - Successfully connected to database!
-2025-05-09 16:21:25 - Successfully connected to database!
-2025-05-09 16:21:25 - Successfully connected to database!
-2025-05-09 16:21:25 - Information of user : {"id":"1","prenom":"Kaloun","nom":"Soulaimane","genre":"male","dateNaissance":"1990-09-01","email":"so.kaloun@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12345","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"1","id_dep":"1","id_filiere":null}
-2025-05-09 16:21:25 - Successfully connected to database!
-2025-05-09 16:21:25 - Successfully connected to database!
-2025-05-09 16:21:55 - Successfully connected to database!
-2025-05-09 16:21:55 - Successfully connected to database!
-2025-05-09 16:21:55 - List of teachers : [{"id":"3","prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"2","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"4","prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"5","prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"},{"id":"17","prenom":"Rizki","nom":"Abdelhadi","genre":"male","dateNaissance":"2025-05-14","email":"rizki@gmail.com","password":null,"CNE":null,"CIN":"D332412","phone":"0659030899","created_at":"2025-05-08 18:16:47","id_role":"3","id_dep":"1","id_filiere":null,"departement_nom":"Informatique"}]
-2025-05-09 16:21:55 - Successfully connected to database!
-2025-05-09 16:22:10 - Successfully connected to database!
-2025-05-09 16:22:10 - Successfully connected to database!
-2025-05-09 16:22:10 - List of modules : [{"id":"8","nom_module":" \t D&eacute;veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"1","semestre_module":"2","nom_departement":"Informatique"},{"id":"2","nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT","niveau_filiere":"2","semestre_module":"2","nom_departement":"Informatique"},{"id":"9","nom_module":"cryptography ","nom_filiere":"SIT","niveau_filiere":"3","semestre_module":"1","nom_departement":"Informatique"}]
-2025-05-09 16:22:10 - Successfully connected to database!
+2025-05-11 10:29:37 - Successfully connected to database!
+2025-05-11 10:29:57 - Successfully connected to database!
+2025-05-11 10:29:57 - Successfully connected to database!
+2025-05-11 10:29:58 - Information of user : {"id":1,"prenom":"Kaloun","nom":"Soulaimane","genre":"male","dateNaissance":"1990-09-01","email":"so.kaloun@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12345","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":1,"id_dep":1,"id_filiere":null}
+2025-05-11 10:29:58 - Successfully connected to database!
+2025-05-11 10:29:58 - Successfully connected to database!
+2025-05-11 10:30:05 - Successfully connected to database!
+2025-05-11 10:30:05 - Successfully connected to database!
+2025-05-11 10:30:05 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:30:05 - Successfully connected to database!
+2025-05-11 10:30:19 - Successfully connected to database!
+2025-05-11 10:30:19 - Successfully connected to database!
+2025-05-11 10:30:19 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:30:19 - Successfully connected to database!
+2025-05-11 10:30:19 - Successfully connected to database!
+2025-05-11 10:30:19 - Successfully connected to database!
+2025-05-11 10:30:20 - List of modules : [{"id":2,"nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"},{"id":6,"nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT1","niveau_filiere":1,"semestre_module":"2","nom_departement":"Informatique"},{"id":7,"nom_module":"Cryptographie 1","nom_filiere":"IRISI1","niveau_filiere":1,"semestre_module":"1","nom_departement":"Informatique"},{"id":10,"nom_module":"Test 2","nom_filiere":"IRISI3","niveau_filiere":3,"semestre_module":"1","nom_departement":"Informatique"},{"id":11,"nom_module":"fdsf","nom_filiere":"IRISI2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"}]
+2025-05-11 10:30:20 - Successfully connected to database!
+2025-05-11 10:30:22 - Successfully connected to database!
+2025-05-11 10:30:22 - Successfully connected to database!
+2025-05-11 10:30:22 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:30:22 - Successfully connected to database!
+2025-05-11 10:30:25 - Successfully connected to database!
+2025-05-11 10:30:25 - Successfully connected to database!
+2025-05-11 10:30:25 - Successfully connected to database!
+2025-05-11 10:30:50 - Successfully connected to database!
+2025-05-11 10:30:50 - Successfully connected to database!
+2025-05-11 10:30:51 - Etat de l'insertion de user : 1
+2025-05-11 10:30:51 - Successfully connected to database!
+2025-05-11 10:30:51 - Successfully connected to database!
+2025-05-11 10:30:51 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":17,"prenom":"Mohammed","nom":"belefiqh","genre":"male","dateNaissance":"2025-04-27","email":"simo@gmail.com","password":null,"CNE":null,"CIN":"LB88888","phone":"+212 99999999999","created_at":"2025-05-11 10:30:50","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:30:51 - Successfully connected to database!
+2025-05-11 10:31:01 - Successfully connected to database!
+2025-05-11 10:31:01 - Successfully connected to database!
+2025-05-11 10:31:02 - Successfully connected to database!
+2025-05-11 10:31:02 - Successfully connected to database!
+2025-05-11 10:31:02 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:31:02 - Successfully connected to database!
+2025-05-11 10:31:03 - Successfully connected to database!
+2025-05-11 10:31:03 - Successfully connected to database!
+2025-05-11 10:31:03 - Successfully connected to database!
+2025-05-11 10:31:06 - Successfully connected to database!
+2025-05-11 10:31:06 - Successfully connected to database!
+2025-05-11 10:31:06 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:31:06 - Successfully connected to database!
+2025-05-11 10:31:07 - Successfully connected to database!
+2025-05-11 10:31:07 - Successfully connected to database!
+2025-05-11 10:31:07 - Successfully connected to database!
+2025-05-11 10:31:10 - Successfully connected to database!
+2025-05-11 10:31:10 - Successfully connected to database!
+2025-05-11 10:31:10 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:31:10 - Successfully connected to database!
+2025-05-11 10:31:11 - Successfully connected to database!
+2025-05-11 10:31:11 - Successfully connected to database!
+2025-05-11 10:31:11 - List of modules : [{"id":2,"nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"},{"id":6,"nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT1","niveau_filiere":1,"semestre_module":"2","nom_departement":"Informatique"},{"id":7,"nom_module":"Cryptographie 1","nom_filiere":"IRISI1","niveau_filiere":1,"semestre_module":"1","nom_departement":"Informatique"},{"id":10,"nom_module":"Test 2","nom_filiere":"IRISI3","niveau_filiere":3,"semestre_module":"1","nom_departement":"Informatique"},{"id":11,"nom_module":"fdsf","nom_filiere":"IRISI2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"}]
+2025-05-11 10:31:11 - Successfully connected to database!
+2025-05-11 10:31:13 - Successfully connected to database!
+2025-05-11 10:31:13 - Successfully connected to database!
+2025-05-11 10:31:13 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:31:13 - Successfully connected to database!
+2025-05-11 10:31:18 - Successfully connected to database!
+2025-05-11 10:31:18 - Successfully connected to database!
+2025-05-11 10:31:18 - List of modules : [{"id":2,"nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"},{"id":6,"nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT1","niveau_filiere":1,"semestre_module":"2","nom_departement":"Informatique"},{"id":7,"nom_module":"Cryptographie 1","nom_filiere":"IRISI1","niveau_filiere":1,"semestre_module":"1","nom_departement":"Informatique"},{"id":10,"nom_module":"Test 2","nom_filiere":"IRISI3","niveau_filiere":3,"semestre_module":"1","nom_departement":"Informatique"},{"id":11,"nom_module":"fdsf","nom_filiere":"IRISI2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"}]
+2025-05-11 10:31:18 - Successfully connected to database!
+2025-05-11 10:31:19 - Successfully connected to database!
+2025-05-11 10:31:19 - Successfully connected to database!
+2025-05-11 10:31:19 - Successfully connected to database!
+2025-05-11 10:31:22 - Successfully connected to database!
+2025-05-11 10:31:22 - Successfully connected to database!
+2025-05-11 10:31:22 - List of modules : [{"id":2,"nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"},{"id":6,"nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT1","niveau_filiere":1,"semestre_module":"2","nom_departement":"Informatique"},{"id":7,"nom_module":"Cryptographie 1","nom_filiere":"IRISI1","niveau_filiere":1,"semestre_module":"1","nom_departement":"Informatique"},{"id":10,"nom_module":"Test 2","nom_filiere":"IRISI3","niveau_filiere":3,"semestre_module":"1","nom_departement":"Informatique"},{"id":11,"nom_module":"fdsf","nom_filiere":"IRISI2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"}]
+2025-05-11 10:31:22 - Successfully connected to database!
+2025-05-11 10:31:25 - Successfully connected to database!
+2025-05-11 10:31:25 - Successfully connected to database!
+2025-05-11 10:31:25 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:31:26 - Successfully connected to database!
+2025-05-11 10:31:36 - Successfully connected to database!
+2025-05-11 10:31:36 - Successfully connected to database!
+2025-05-11 10:31:36 - List of modules : [{"id":2,"nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"},{"id":6,"nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT1","niveau_filiere":1,"semestre_module":"2","nom_departement":"Informatique"},{"id":7,"nom_module":"Cryptographie 1","nom_filiere":"IRISI1","niveau_filiere":1,"semestre_module":"1","nom_departement":"Informatique"},{"id":10,"nom_module":"Test 2","nom_filiere":"IRISI3","niveau_filiere":3,"semestre_module":"1","nom_departement":"Informatique"},{"id":11,"nom_module":"fdsf","nom_filiere":"IRISI2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"}]
+2025-05-11 10:31:36 - Successfully connected to database!
+2025-05-11 10:31:41 - Successfully connected to database!
+2025-05-11 10:31:41 - Successfully connected to database!
+2025-05-11 10:31:41 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:31:41 - Successfully connected to database!
+2025-05-11 10:32:22 - Successfully connected to database!
+2025-05-11 10:32:22 - Successfully connected to database!
+2025-05-11 10:32:22 - List of modules : [{"id":2,"nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"},{"id":6,"nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT1","niveau_filiere":1,"semestre_module":"2","nom_departement":"Informatique"},{"id":7,"nom_module":"Cryptographie 1","nom_filiere":"IRISI1","niveau_filiere":1,"semestre_module":"1","nom_departement":"Informatique"},{"id":10,"nom_module":"Test 2","nom_filiere":"IRISI3","niveau_filiere":3,"semestre_module":"1","nom_departement":"Informatique"},{"id":11,"nom_module":"fdsf","nom_filiere":"IRISI2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"}]
+2025-05-11 10:32:22 - Successfully connected to database!
+2025-05-11 10:32:23 - Successfully connected to database!
+2025-05-11 10:32:23 - Successfully connected to database!
+2025-05-11 10:32:23 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:32:23 - Successfully connected to database!
+2025-05-11 10:32:25 - Successfully connected to database!
+2025-05-11 10:32:25 - Successfully connected to database!
+2025-05-11 10:32:25 - List of modules : [{"id":2,"nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"},{"id":6,"nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT1","niveau_filiere":1,"semestre_module":"2","nom_departement":"Informatique"},{"id":7,"nom_module":"Cryptographie 1","nom_filiere":"IRISI1","niveau_filiere":1,"semestre_module":"1","nom_departement":"Informatique"},{"id":10,"nom_module":"Test 2","nom_filiere":"IRISI3","niveau_filiere":3,"semestre_module":"1","nom_departement":"Informatique"},{"id":11,"nom_module":"fdsf","nom_filiere":"IRISI2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"}]
+2025-05-11 10:32:25 - Successfully connected to database!
+2025-05-11 10:32:26 - Successfully connected to database!
+2025-05-11 10:32:26 - Successfully connected to database!
+2025-05-11 10:32:26 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:32:26 - Successfully connected to database!
+2025-05-11 10:32:27 - Successfully connected to database!
+2025-05-11 10:32:27 - Successfully connected to database!
+2025-05-11 10:32:27 - List of modules : [{"id":2,"nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"},{"id":6,"nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT1","niveau_filiere":1,"semestre_module":"2","nom_departement":"Informatique"},{"id":7,"nom_module":"Cryptographie 1","nom_filiere":"IRISI1","niveau_filiere":1,"semestre_module":"1","nom_departement":"Informatique"},{"id":10,"nom_module":"Test 2","nom_filiere":"IRISI3","niveau_filiere":3,"semestre_module":"1","nom_departement":"Informatique"},{"id":11,"nom_module":"fdsf","nom_filiere":"IRISI2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"}]
+2025-05-11 10:32:27 - Successfully connected to database!
+2025-05-11 10:32:34 - Successfully connected to database!
+2025-05-11 10:32:34 - Successfully connected to database!
+2025-05-11 10:32:34 - List of modules : [{"id":2,"nom_module":"D\u00e9veloppement Web Back End","nom_filiere":"SIT2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"},{"id":6,"nom_module":"Fondamentaux de la s\u00e9curit\u00e9 informatique et cyberdroit","nom_filiere":"SIT1","niveau_filiere":1,"semestre_module":"2","nom_departement":"Informatique"},{"id":7,"nom_module":"Cryptographie 1","nom_filiere":"IRISI1","niveau_filiere":1,"semestre_module":"1","nom_departement":"Informatique"},{"id":10,"nom_module":"Test 2","nom_filiere":"IRISI3","niveau_filiere":3,"semestre_module":"1","nom_departement":"Informatique"},{"id":11,"nom_module":"fdsf","nom_filiere":"IRISI2","niveau_filiere":2,"semestre_module":"2","nom_departement":"Informatique"}]
+2025-05-11 10:32:34 - Successfully connected to database!
+2025-05-11 10:32:35 - Successfully connected to database!
+2025-05-11 10:32:35 - Successfully connected to database!
+2025-05-11 10:32:35 - List of teachers : [{"id":2,"prenom":"Sara","nom":"QASSIMI","genre":"female","dateNaissance":"1990-09-01","email":"sara.qassimi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12346","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":3,"prenom":"Yassine","nom":"SADQI","genre":"male","dateNaissance":"1990-09-01","email":"y.sadqi@uca.ac.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12347","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":2,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":4,"prenom":"Aziz","nom":"DAROUICHI","genre":"male","dateNaissance":"1990-09-01","email":"az.darouichi@uca.ma","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12348","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"},{"id":5,"prenom":"Mohammed","nom":"AIT HEMAD","genre":"male","dateNaissance":"1990-09-01","email":"ait.hemad.m@hotmail.com","password":"$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy","CNE":null,"CIN":"X12349","phone":"+212 622 222 222","created_at":"2025-04-29 15:04:10","id_role":3,"id_dep":1,"id_filiere":null,"nom_departement":"Informatique"}]
+2025-05-11 10:32:35 - Successfully connected to database!
