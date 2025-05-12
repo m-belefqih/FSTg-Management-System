@@ -111,7 +111,15 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
                         <img class="rounded-circle" src="/FSTg-Management-System/assets/img/profiles/avatar-01.jpg" alt="test">
                         <div class="user-text">
                             <h6><?php echo ucfirst($_SESSION['user_data']['nom']) . " " . ucfirst($_SESSION['user_data']['prenom']) ?></h6>
-                            <p class="text-muted mb-0"><?php echo $_SESSION['role_name'] ?></p>
+                            <p class="text-muted mb-0">
+                                <?php
+                                    if ($_SESSION['user_data']['id_role'] === 2) {
+                                        echo ($_SESSION['user_data']['genre'] == 'male') ? "Coordinateur" : "Coordinatrice";
+                                    } else {
+                                        echo $_SESSION['role_name'];
+                                    }
+                                ?>
+                            </p>
                         </div>
                     </span>
                 </a>
@@ -123,10 +131,18 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
                         </div>
                         <div class="user-text">
                             <h6><?php echo ucfirst($_SESSION['user_data']['nom']) . " " . ucfirst($_SESSION['user_data']['prenom']) ?></h6>
-                            <p class="text-muted mb-0"><?php echo $_SESSION['role_name'] ?></p>
+                            <p class="text-muted mb-0">
+                                <?php
+                                    if ($_SESSION['user_data']['id_role'] === 2) {
+                                        echo ($_SESSION['user_data']['genre'] == 'female') ? "Coordinatrice" : "Coordinateur";
+                                    } else {
+                                        echo $_SESSION['role_name'];
+                                    }
+                                ?>
+                            </p>
                         </div>
                     </div>
-                    <a class="dropdown-item" href="#">Mon profile</a>
+                    <a class="dropdown-item" href="#">Mon profil</a>
                     <a class="dropdown-item" href="#">Boîte de réception</a>
                     <a class="dropdown-item" href="/FSTg-Management-System/views/logout.php">Se déconnecter</a>
                 </div>
