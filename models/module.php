@@ -120,3 +120,69 @@ function view($id): ?array
         return null;
     }
 }
+
+
+// Function to download modules in CSV format
+function downloadModulesCSV()
+{
+    try {
+        global $conn;
+
+        // Création de la requête préparée avec PDO
+        $query = "SELECT m.nom AS nom_module, f.nom AS nom_filiere, f.niveau AS niveau_filiere, m.semestre AS semestre_module
+                  FROM module m 
+                  JOIN filiere f ON m.id_filiere = f.id 
+                  JOIN departement d ON f.id_dep = d.id WHERE d.id = ?";
+
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$_SESSION['user_data']['id_dep']]);
+
+        if($stmt->rowCount() > 0) {
+            $delimiter = ",";
+
+            // Créer un pointeur de fichier
+            $f = fopen('php://memory', 'w');
+
+            // Définir les en-têtes des colonnes
+            $fields = array('Nom du module', 'Filière', 'Niveau', 'Semestre');
+            fputcsv($f, $fields, $delimiter);
+
+            // Récupérer et écrire les données ligne par ligne
+            while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $lineData = array(
+                    $row['nom_module'],
+                    $row['nom_filiere'],
+                    $row['niveau_filiere'],
+                    $row['semestre_module']
+                );
+                fputcsv($f, $lineData, $delimiter);
+            }
+
+            // Retourner au début du fichier
+            fseek($f, 0);
+
+            // Headers pour le téléchargement
+            header('Content-Type: text/csv; charset=utf-8');
+            header('Content-Disposition: attachment; filename="modules-list_' . date('Y-m-d') . '.csv"');
+
+            // Ajout de BOM UTF-8 (obligatoire pour Excel)
+            echo "\xEF\xBB\xBF"; // <-- Cette ligne est très importante
+
+            // Envoyer le contenu du fichier
+            fpassthru($f);
+            fclose($f);
+            exit();
+        } else {
+            $_SESSION['error'] = "Aucun module trouvé.";
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
+            exit();
+        }
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur de database : " . $e->getMessage() . "\n",
+            FILE_APPEND
+        );
+    }
+}
+
+?>
