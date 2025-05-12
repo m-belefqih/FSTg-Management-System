@@ -6,7 +6,10 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="page-sub-header">
-                        <h3 class="page-title">Bienvenue Mr. <?php echo ucfirst($_SESSION['user_data']['nom']) ?> !</h3>
+                        <h3 class="page-title">
+                            Bienvenue <?php if(isset($_SESSION['user_data']['genre'])) echo ($_SESSION['user_data']['genre'] == 'male') ? "Mr. " : "Mme. ";
+                            echo ucfirst($_SESSION['user_data']['nom']) ?> !
+                        </h3>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="home.php">Chef de département</a></li>
                             <li class="breadcrumb-item active">Accueil</li>
