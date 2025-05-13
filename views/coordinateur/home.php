@@ -2,10 +2,10 @@
 session_start();
 require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
 
-if (isset($_SESSION['user_data'])) { ?>
+if (isset($_SESSION['user_data']) && $_SESSION['user_data']['id_role'] == 2) { ?>
 
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
