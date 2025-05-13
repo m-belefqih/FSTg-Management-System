@@ -254,7 +254,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/side
         <?php endif; ?>
 
         <?php if(isset($_SESSION['error'])): ?>
-        toastr.success("<?php echo $_SESSION['error']; ?>", 'Réssayer !');
+        toastr.error("<?php echo $_SESSION['error']; ?>", 'Réssayer !');
         <?php unset($_SESSION['error']); ?>
         <?php endif; ?>
 
