@@ -2,7 +2,7 @@
 session_start();
 require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
 
-if (isset($_SESSION['user_data'])) {
+if (isset($_SESSION['user_data']) && $_SESSION['user_data']['id_role'] == 1) {
 
     // Linking the module.php model and view using this controller
     require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/module_controller.php');

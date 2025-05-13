@@ -2,7 +2,7 @@
 session_start();
 require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
 
-if (isset($_SESSION['user_data'])) { ?>
+if (isset($_SESSION['user_data']) && $_SESSION['user_data']['id_role'] == 1) { ?>
 
 <!DOCTYPE html>
 <html lang="en">
