@@ -16,7 +16,7 @@
                         <a href="#"><i class="fas fa-chalkboard-teacher"></i><span> Enseignants</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-tasks"></i><span> Affecter un module</span></a>
+                        <a href="/FSTg-Management-System/views/coordinateur/teacher_management/index.php"><i class="fas fa-tasks"></i><span> Affecter un module</span></a>
                     </li>
 
                     <li class="submenu">
