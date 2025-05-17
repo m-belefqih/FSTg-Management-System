@@ -185,4 +185,160 @@ function downloadModulesCSV()
     }
 }
 
-?>
+function getMyFilieres($id_coordinateur, $id_departement): ?array
+{
+    global $conn;
+    $query = "SELECT id, nom, niveau
+        FROM filiere
+        WHERE id_coordinator = ? AND id_dep = ?";
+
+    try {
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id_coordinateur, $id_departement]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC); // Fetch all results as an associative array
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de l'exécution de la requête : " . $e->getMessage(). "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
+
+function findAllModulesAffected($id_filiere): ?array
+{
+    global $conn;
+    $query = "SELECT module.id AS id_module, module.nom AS nom_module, module.id_filiere, module.id_teacher, user.nom AS nom_teacher, user.prenom AS prenom_teacher, filiere.nom as nom_filiere 
+        FROM module 
+        JOIN user ON module.id_teacher = user.id 
+        JOIN filiere ON module.id_filiere = filiere.id 
+        WHERE module.id_filiere = ?";
+
+    try {
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id_filiere]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC); // Fetch all results as an associative array
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de l'exécution de la requête : " . $e->getMessage(). "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
+
+function findAllModulesNotAffected($id_filiere): ?array
+{
+    global $conn;
+    $query = "SELECT * FROM module WHERE id_filiere = ? AND id_teacher IS NULL";;
+
+    try {
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id_filiere]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC); // Fetch all results as an associative array
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de l'exécution de la requête : " . $e->getMessage(). "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
+
+function findAllTeachers($id_dep): ?array
+{
+    global $conn;
+    $query = "SELECT * FROM user WHERE (id_role = 2 OR id_role = 3) AND id_dep = ?";
+
+    try {
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id_dep]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC); // Fetch all results as an associative array
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de l'exécution de la requête : " . $e->getMessage(). "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
+
+
+function affectModule($id_module, $id_enseignant): bool
+{
+    global $conn;
+    $query = "UPDATE module SET id_teacher = ? WHERE id = ?";
+
+    try {
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id_enseignant, $id_module]);
+        return $stmt->rowCount() > 0 ? true : false;
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de l'exécution de la requête : " . $e->getMessage(). "\n",
+            FILE_APPEND);
+        return false;
+    }
+}
+
+function deleteModuleAssignment($id): bool
+{
+    global $conn;
+    try {
+        $query = "UPDATE module SET id_teacher = NULL WHERE id = ?";;
+        $stmt = $conn->prepare($query);
+        return $stmt->execute([$id]);
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de la suppression de l'affectation du module : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return false;
+    }
+}
+
+function viewAffectation($id): ?array
+{
+    global $conn;
+    try {
+        $query = "SELECT module.id AS id_module, module.nom AS nom_module, module.id_teacher, user.nom AS nom_teacher, user.prenom AS prenom_teacher
+            FROM module
+            JOIN user ON module.id_teacher = user.id
+            WHERE module.id = ?";
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de la récupération des données : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
+
+function editAffectation($id_module, $id_enseignant): bool
+{
+    global $conn;
+    try {
+        $query = "UPDATE module SET id_teacher = ? WHERE id = ?";
+        $stmt = $conn->prepare($query);
+        return $stmt->execute([$id_enseignant, $id_module]);
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de la modification : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return false;
+    }
+}
+
+function getNameFiliere($id): ?string
+{
+    global $conn;
+    try {
+        $query = "SELECT nom FROM filiere WHERE id = ?";
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id]);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result ? $result['nom'] : null;
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de la récupération du nom de la filière : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
