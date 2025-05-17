@@ -22,6 +22,17 @@
     <link rel="stylesheet" href="../../../assets/css/style.css">
     <link rel="stylesheet" href="../../../assets/css/style-override.css">
 
+    <!-- Custom style CSS -->
+    <style>
+        a {
+            color: #C17900; !important;
+        }
+
+        a:hover{
+            color: #C17900; !important;
+        }
+    </style>
+
 </head>
 <body>
     <div class="main-wrapper">
