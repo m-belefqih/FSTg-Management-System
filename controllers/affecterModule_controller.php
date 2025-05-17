@@ -16,11 +16,11 @@ function indexAction(): void
 {
     $id_filiere = $_GET['id'];
 
-    $modulesTeachers = array();
-    $modulesTeachers = findAllModulesAffected($id_filiere);
+    $modulesAffected = array();
+    $modulesAffected = findAllModulesAffected($id_filiere);
 
     file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
-        date('Y-m-d H:i:s') . " - List of modules and there teachers : " . json_encode($modulesTeachers) . "\n",
+        date('Y-m-d H:i:s') . " - List of modules and there teachers : " . json_encode($modulesAffected) . "\n",
         FILE_APPEND
     );
 
