@@ -32,7 +32,7 @@ function affectPageAction(): void
 {
     $id_filiere = $_GET['id'];
 
-    $name_filiere = getNameFilire($id_filiere);
+    $name_filiere = getNameFiliere($id_filiere);
 
     $enseignants = array();
     $enseignants = findAllTeachers($_SESSION['user_data']['id_dep']);
