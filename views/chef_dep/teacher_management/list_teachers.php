@@ -48,6 +48,12 @@
             background-color: #C17900; !important;
             border-color: #C17900; !important;
         }
+
+        /* Nouveau style pour le hover des boutons d'action */
+        .actions .btn-sm:hover {
+            background-color: #C17900 !important;
+            color: #FFFFFF !important;
+        }
     </style>
 </head>
 <body>
