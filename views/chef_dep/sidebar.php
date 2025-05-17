@@ -1,3 +1,9 @@
+<!-- Custom style CSS -->
+<style>
+    .sidebar-menu > ul > li > a:hover {
+        color: #C17900; !important;
+    }
+</style>
 <div class="sidebar" id="sidebar">
     <div>
         <div class="sidebar-inner slimscroll">
