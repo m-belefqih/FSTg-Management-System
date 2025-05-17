@@ -1,3 +1,9 @@
+<!-- Custom style CSS -->
+<style>
+    .sidebar-menu > ul > li > a:hover {
+        color: #C17900; !important;
+    }
+</style>
 <div class="sidebar" id="sidebar">
     <div>
         <div class="sidebar-inner slimscroll">
@@ -12,11 +18,11 @@
                     <li>
                         <a href="/FSTg-Management-System/views/coordinateur/student_management/index.php"><i class="fas fa-graduation-cap"></i><span> Étudiants</span></a>
                     </li>
+<!--                    <li>-->
+<!--                        <a href="#"><i class="fas fa-chalkboard-teacher"></i><span> Enseignants</span></a>-->
+<!--                    </li>-->
                     <li>
-                        <a href="#"><i class="fas fa-chalkboard-teacher"></i><span> Enseignants</span></a>
-                    </li>
-                    <li>
-                        <a href="/FSTg-Management-System/views/coordinateur/teacher_management/index.php"><i class="fas fa-tasks"></i><span> Affecter un module</span></a>
+                        <a href="/FSTg-Management-System/views/coordinateur/affectation_module/index.php"><i class="fas fa-tasks"></i><span> Affectation des modules</span></a>
                     </li>
 
                     <li class="submenu">
