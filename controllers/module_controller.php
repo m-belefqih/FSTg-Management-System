@@ -1,6 +1,7 @@
 <?php
 // linking the model with view using this controller
 require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/models/module.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/models/notification.php');
 
 // Function to get the page for listing all modules
 function indexAction(): void
@@ -26,7 +27,7 @@ function createAction(): void
 // Function to store a new module
 function storeAction(): void
 {
-    $nom = htmlentities($_POST['nom']);
+    $nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
     $id_filiere = htmlentities($_POST['id_filiere']);
     $semestre = htmlentities($_POST['semestre']);
 
@@ -39,10 +40,15 @@ function storeAction(): void
         exit();
     }
 
-    // Sinon, insérer le nouveau module
-    $test2 = create($nom, $semestre, $id_filiere);
+    // Insérer le nouveau module et récupérer son ID
+    $id_module = create($nom, $semestre, $id_filiere);
 
-    if ($test2) {
+    if ($id_module) {
+        $id_coordinator = getCoordinatorOfModule($id_module);
+
+        // Ajouter un nouveau notification pour le coordinateur concerné
+        addNewNotification($id_module, $_SESSION['user_data']['id'], $id_coordinator);
+
         $_SESSION['success'] = "Module ajouté avec succès";
         header('Location: index.php?action=list');
     } else {
