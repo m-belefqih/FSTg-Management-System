@@ -56,19 +56,20 @@ function isExist($nom, $id_filiere): bool
 }
 
 
-function create($nom, $semestre, $id_filiere): bool
+function create($nom, $semestre, $id_filiere): ?int
 {
     global $conn;
     $query = "INSERT INTO module (nom, semestre, id_filiere) VALUES (?, ?, ?)";
 
     try {
         $stmt = $conn->prepare($query);
-        return $stmt->execute([$nom, $semestre, $id_filiere]);
+        $stmt->execute([$nom, $semestre, $id_filiere]);
+        return $conn->lastInsertId(); // Return the ID of the module created
     } catch (PDOException $e) {
         file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
             date('Y-m-d H:i:s') . " - Erreur lors de l'insertion du module : " . $e->getMessage() . "\n",
             FILE_APPEND);
-        return false;
+        return null;
     }
 }
 
@@ -338,6 +339,26 @@ function getNameFiliere($id): ?string
     } catch (PDOException $e) {
         file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
             date('Y-m-d H:i:s') . " - Erreur lors de la récupération du nom de la filière : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
+
+function getCoordinatorOfModule($id_module): ?int
+{
+    global $conn;
+    try {
+        $query = "SELECT filiere.id_coordinator AS coordinator_of_module
+            FROM module
+            JOIN filiere ON module.id_filiere = filiere.id
+            WHERE module.id = ?";
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id_module]);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result ? $result['coordinator_of_module'] : null;
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de la récupération de ID du coordinateur de module concerné : " . $e->getMessage() . "\n",
             FILE_APPEND);
         return null;
     }
