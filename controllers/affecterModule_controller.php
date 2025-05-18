@@ -1,6 +1,8 @@
 <?php
 // linking the module.php models with view using this controller
 require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/models/module.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/models/notification.php');
+
 
 // Function to get the page of level selection
 function choixNiveau(): void
@@ -60,18 +62,21 @@ function affectModuleAction(): void
     $id_module = htmlentities($_POST['module']);
     $id_enseignant = htmlentities($_POST['enseignant']);
 
-    $test = affectModule($id_module, $id_enseignant);
+    $test1 = affectModule($id_module, $id_enseignant);
 
     file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
-        date('Y-m-d H:i:s') . " - Etat de l'insertion de user : " . $test . "\n",
+        date('Y-m-d H:i:s') . " - Etat de l'affectation de module : " . $test1 . "\n",
         FILE_APPEND
     );
 
-    if($test){
+    if($test1){
         $_SESSION['success'] = "Module a été affecté avec succès";
     }else {
         $_SESSION['error'] = "Échec de l'affectation";
     }
+
+    // Delete notification of the module that should be affected
+    deleteNotification($id_module);
 
     header('Location: index.php?action=list&id=' . $id_filiere);
 }
