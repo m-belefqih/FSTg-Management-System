@@ -1,6 +1,5 @@
 <?php
-// require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/config/DB_connection.php');
-require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notification_controller.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,9 +65,13 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
             <!-- Notification Dropdown -->
             <li class="nav-item dropdown noti-dropdown me-2">
 
-                <div class="spinner-grow text-success" role="status">
-                    <span class="sr-only"></span>
-                </div>
+                <?php if(isset($_SESSION['user_data']['id_role']) && $_SESSION['user_data']['id_role'] === 2): ?>
+                    <?php if(isset($notifications) && !empty($notifications) && $notifications[0]['id_receiver'] == $_SESSION['user_data']['id']): ?>
+                        <div class="spinner-grow text-success" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
 
                 <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
                     <img src="/FSTg-Management-System/assets/img/icons/header-icon-05.svg" alt="">
@@ -78,14 +81,28 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.php');
 
                     <!-- Notification Header -->
                     <div class="topnav-dropdown-header">
-                        <span class="notification-title">Notifications</span>
-                        <a href="javascript:void(0)" class="clear-noti"> Tout effacer </a>
+                        <span class="notification-title" style="font-weight: bold;">Notifications</span>
+                        <a href="javascript:void(0)" class="clear-noti" style="color: #dc3545"> Tout effacer </a>
                     </div>
 
                     <!-- Notification Content -->
                     <div class="noti-content">
                         <ul class="notification-list">
-
+                            <?php if(isset($notifications) && !empty($notifications) && $notifications[0]['id_receiver'] == $_SESSION['user_data']['id']) : ?>
+                                <?php foreach ($notifications as $notification): ?>
+                                    <li class="notification-message">
+                                        <a href="/FSTg-Management-System/views/coordinateur/affectation_module/index.php?action=affect&id=<?= $notification['id_filiere'] ?>">
+                                            <div class="media d-flex">
+                                                <div class="media-body">
+                                                    <h6 class="action-title" style="color: #c17900;">Nouveau module à <?= $notification['nom_filiere'] ?></h6>
+                                                    <p style="color: #4f5050">Mr. <b><?= $notification['nom_sender'] ?></b> a été ajouté un nouveau module à <b><?= $notification['nom_filiere'] ?></b>. Une affectation d'enseignant est requise.</p>
+                                                    <p class="notification-time"><span><?= $notification['created_at'] ?></span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
                         </ul>
                     </div>
 
