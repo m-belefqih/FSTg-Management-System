@@ -42,7 +42,7 @@ CREATE TABLE `user` (
   `CIN` varchar(20) NOT NULL UNIQUE,
   `phone` varchar(20) DEFAULT NULL,
   `created_at` datetime NOT NULL,
-  `id_role` int(11) NOT NULL,
+  `id_role` int(11) DEFAULT NULL,
   `id_dep` int(11) NOT NULL,
   `id_filiere` int(11) DEFAULT NULL,        -- la filière de l'étudiant
   PRIMARY KEY (`id`)
@@ -176,7 +176,7 @@ CREATE TABLE `filiere` (
   `id` int(11) NOT NULL AUTO_INCREMENT UNIQUE,
   `nom` varchar(30) NOT NULL,
   `nom_complet` varchar(200) NOT NULL,
-  `type` varchar(100) NOT NULL,         -- Exemple : 'Licence', 'Master', 'Cycle d’ingénieur'
+  `id_type` int(11) DEFAULT NULL,      -- le type de la filière (cycle d'ingénieur, licence, master, ...)
   `niveau` int(11) NOT NULL,            -- Niveau est l'année d'étude (soit 1er année soit 2ème année ...)
   `id_coordinator` int(11) NOT NULL,    -- le coordinateur qui s'occupe de la filière
   `id_dep` int(11) NOT NULL,            -- le département qui contient la filière
@@ -187,13 +187,36 @@ CREATE TABLE `filiere` (
 -- Dumping data for table `filiere`
 --
 
-INSERT INTO `filiere` (`id`, `nom`, `nom_complet`, `type`, `niveau`, `id_coordinator`, `id_dep`) VALUES
-(1, 'IRISI1', 'Ingénierie en Réseaux Informatique et Systèmes Information', 'Cycle ingénieur', 1, 2, 1),
-(2, 'IRISI2', 'Ingénierie en Réseaux Informatique et Systèmes Information', 'Cycle ingénieur', 2, 2, 1),
-(3, 'IRISI3', 'Ingénierie en Réseaux Informatique et Systèmes Information', 'Cycle ingénieur', 3, 2, 1),
-(4, 'SIT1', 'Sécurité IT', 'Cycle ingénieur', 1, 3, 1),
-(5, 'SIT2', 'Sécurité IT', 'Cycle ingénieur', 2, 3, 1),
-(6, 'SIT3', 'Sécurité IT', 'Cycle ingénieur', 3, 3, 1);
+INSERT INTO `filiere` (`id`, `nom`, `nom_complet`, `id_type`, `niveau`, `id_coordinator`, `id_dep`) VALUES
+(1, 'IRISI1', 'Ingénierie en Réseaux Informatique et Systèmes d''Information', 1, 1, 2, 1),
+(2, 'IRISI2', 'Ingénierie en Réseaux Informatique et Systèmes d''Information', 1, 2, 2, 1),
+(3, 'IRISI3', 'Ingénierie en Réseaux Informatique et Systèmes d''Information', 1, 3, 2, 1),
+(4, 'SIT1', 'Sécurité IT', 1, 1, 3, 1),
+(5, 'SIT2', 'Sécurité IT', 1, 2, 3, 1),
+(6, 'SIT3', 'Sécurité IT', 1, 3, 3, 1);
+
+-- ---------------------------------------------------------------------------------
+
+--
+-- Table structure for `filiere_type`
+--
+
+CREATE TABLE `filiere_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT UNIQUE,
+  `nom` varchar(100) NOT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `filiere_type`
+--
+
+INSERT INTO `filiere_type` (`id`, `nom`) VALUES
+(1, 'Cycle d''ingénieur'),
+(2, 'Licence'),
+(3, 'Master'),
+(4, 'DEUST'),
+(5, 'Doctorat');
 
 -- ---------------------------------------------------------------------------------
 
@@ -234,8 +257,8 @@ INSERT INTO `module` (`id`, `nom`, `semestre`, `id_filiere`, `id_teacher`) VALUE
 (12, 'Sécurité des Applications', 1, 3, 3),
 
 -- Modules of SIT 1
-(13, 'Systèmes Exploitation', 1, 4, 7),
-(14, 'Systèmes Information', 1, 4, 8),
+(13, 'Systèmes d''Exploitation', 1, 4, 7),
+(14, 'Systèmes d''Information', 1, 4, 8),
 (15, 'Fondamentaux de la sécurité informatique et cyberdroit', 2, 4, 3),
 (16, 'Réseaux et Protocoles', 2, 4, 5),
 
@@ -259,7 +282,7 @@ INSERT INTO `module` (`id`, `nom`, `semestre`, `id_filiere`, `id_teacher`) VALUE
 
 CREATE TABLE `note` (
  `id` int(11) NOT NULL AUTO_INCREMENT UNIQUE,
- `value` decimal(10,0) DEFAULT NULL, -- example : 12.5
+ `value` decimal(10,0) DEFAULT NULL, -- example: 12.5
  `valideProf` tinyint(1) NOT NULL DEFAULT 0,
  `valideCoord` tinyint(1) NOT NULL DEFAULT 0,
  `id_module` int(11) NOT NULL,
@@ -324,7 +347,7 @@ ALTER TABLE `user_tokens`
 --
 
 ALTER TABLE `user`
-    ADD CONSTRAINT `user_fk1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id`) ON UPDATE CASCADE,
+    ADD CONSTRAINT `user_fk1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
     ADD CONSTRAINT `user_fk2` FOREIGN KEY (`id_dep`) REFERENCES `departement` (`id`) ON UPDATE CASCADE,
     ADD CONSTRAINT `user_fk3` FOREIGN KEY (`id_filiere`) REFERENCES `filiere` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
 
@@ -333,8 +356,9 @@ ALTER TABLE `user`
 --
 
 ALTER TABLE `filiere`
-    ADD CONSTRAINT `filiere_fk1` FOREIGN KEY (`id_coordinator`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-    ADD CONSTRAINT `filiere_fk2` FOREIGN KEY (`id_dep`) REFERENCES `departement` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+    ADD CONSTRAINT `filiere_fk1` FOREIGN KEY (`id_type`) REFERENCES `filiere_type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+    ADD CONSTRAINT `filiere_fk2` FOREIGN KEY (`id_coordinator`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `filiere_fk3` FOREIGN KEY (`id_dep`) REFERENCES `departement` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `module`
