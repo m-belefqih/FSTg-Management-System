@@ -54,7 +54,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `prenom`, `nom`, `genre`, `dateNaissance`, `email`, `password`, `CNE`, `CIN`, `phone`, `created_at`, `id_filiere`, `id_role`, `id_dep`) VALUES
 -- Chef of the department
-(1, 'Kaloun', 'Soulaimane', 'male', '1990-09-01', 'so.kaloun@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12345', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 1, 1),
+(1, 'Soulaimane', 'KALOUN', 'male', '1990-09-01', 'so.kaloun@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12345', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 1, 1),
 
 -- Coordinators
 (2, 'Sara', 'QASSIMI', 'female', '1990-09-01', 'sara.qassimi@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12346', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
@@ -204,7 +204,7 @@ INSERT INTO `filiere` (`id`, `nom`, `nom_complet`, `id_type`, `niveau`, `id_coor
 CREATE TABLE `filiere_type` (
   `id` int(11) NOT NULL AUTO_INCREMENT UNIQUE,
   `nom` varchar(100) NOT NULL,
-PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -281,14 +281,14 @@ INSERT INTO `module` (`id`, `nom`, `semestre`, `id_filiere`, `id_teacher`) VALUE
 --
 
 CREATE TABLE `note` (
- `id` int(11) NOT NULL AUTO_INCREMENT UNIQUE,
- `value` decimal(10,0) DEFAULT NULL, -- example: 12.5
- `valideProf` tinyint(1) NOT NULL DEFAULT 0,
- `valideCoord` tinyint(1) NOT NULL DEFAULT 0,
- `id_module` int(11) NOT NULL,
- `id_teacher` int(11) NOT NULL,
- `cne_etudiant` varchar(20) NOT NULL,
- PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT UNIQUE,
+  `value` decimal(10,0) DEFAULT NULL, -- example: 12.5
+  `valideProf` tinyint(1) NOT NULL DEFAULT 0,
+  `valideCoord` tinyint(1) NOT NULL DEFAULT 0,
+  `id_module` int(11) NOT NULL,
+  `id_teacher` int(11) NOT NULL,
+  `cne_etudiant` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -329,6 +329,21 @@ INSERT INTO `note` (`id`, `value`, `valideProf`, `valideCoord`, `id_module`, `id
 (31, 12, 1, 1, 3, 4, 'C12345622'),
 (32, 12, 1, 1, 3, 4, 'C12345623'),
 (33, 12, 1, 1, 3, 4, 'C12345624');
+
+-- ---------------------------------------------------------------------------------
+
+--
+-- Table structure for table `notification`
+--
+
+CREATE TABLE `notification` (
+  `id` int(11) NOT NULL AUTO_INCREMENT UNIQUE,
+  `id_module` int(11) NOT NULL,
+  `id_sender` int(11) DEFAULT NULL,
+  `id_receiver` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- ---------------------------------------------------------------------------------
 
@@ -375,4 +390,13 @@ ALTER TABLE `module`
 ALTER TABLE `note`
     ADD CONSTRAINT `note_fk1` FOREIGN KEY (`id_module`) REFERENCES `module` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
     ADD CONSTRAINT `note_fk2` FOREIGN KEY (`id_teacher`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--                                                                                            --
+-- Constraints for table `notification`
+--
+
+ALTER TABLE `notification`
+    ADD CONSTRAINT `notification_fk1` FOREIGN KEY (`id_module`) REFERENCES `module` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `notification_fk2` FOREIGN KEY (`id_sender`) REFERENCES `user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+    ADD CONSTRAINT `notification_fk3` FOREIGN KEY (`id_receiver`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
