@@ -34,7 +34,7 @@ function storeAction(): void
     $role  = htmlentities($_POST['role']);
     $phone  = htmlentities($_POST['phone']);
 
-    // Verify if the email is already exist
+    // Verify if the email already exists
     if (checkEmail($email)) {
         $_SESSION['error'] = "Cette email existe déjà";
         $_SESSION['messageEmail'] = $email;
