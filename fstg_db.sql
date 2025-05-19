@@ -59,14 +59,14 @@ INSERT INTO `user` (`id`, `prenom`, `nom`, `genre`, `dateNaissance`, `email`, `p
 -- Coordinators
 (2, 'Sara', 'QASSIMI', 'female', '1990-09-01', 'sara.qassimi@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12346', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
 (3, 'Yassine', 'SADQI', 'male', '1990-09-01', 'y.sadqi@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12347', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
+(4, 'Nawal', 'BOURQUIA', 'female', '1990-09-01', 'nawalbourquia@yahoo.fr', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12348', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
+(5, 'Abdessamad', 'EL BOUSHAKI', 'male', '1990-09-01', 'a.elboushaki@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12349', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
+(6, 'Omar', 'BENCHAREF', 'male', '1990-09-01', 'o.bencharef@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12350', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 2, 1),
 
 -- Professors
-(4, 'Aziz', 'DAROUICHI', 'male', '1990-09-01', 'az.darouichi@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12348', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
-(5, 'Mohammed', 'AIT HEMAD', 'male', '1990-09-01', 'ait.hemad.m@hotmail.com', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12349', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
-(6, 'Omar', 'BENCHAREF', 'male', '1990-09-01', 'o.bencharef@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12350', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
-(7, 'Abdessamad', 'EL BOUSHAKI', 'male', '1990-09-01', 'a.elboushaki@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12351', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
+(7, 'Mohammed', 'AIT HEMAD', 'male', '1990-09-01', 'ait.hemad.m@hotmail.com', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12351', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
 (8, 'Rajaa', 'HANBALI', 'female', '1990-09-01', 'r.hanbali@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12352', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
-(9, 'Nawal', 'BOURQUIA', 'female', '1990-09-01', 'nawalbourquia@yahoo.fr', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12353', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
+(9, 'Aziz', 'DAROUICHI', 'male', '1990-09-01', 'az.darouichi@uca.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', NULL, 'X12353', '+212 622 222 222', '2025-04-29 15:04:10', NULL, 3, 1),
 
 -- Students of IRISI 1
 (10, 'Mohammed', 'BELEFQIH', 'male', '1990-09-01', 'm.belefqih5955@uca.ac.ma', '$2y$10$euawtk.BqadFyqrldmYkXef1mkfLljcF5fMeRRPUuY.if2xNKvPhy', 'P141623', 'X12354', '+212 622 222 222', '2025-04-29 15:04:10', 1, 4, 1),
@@ -193,7 +193,11 @@ INSERT INTO `filiere` (`id`, `nom`, `nom_complet`, `id_type`, `niveau`, `id_coor
 (3, 'IRISI3', 'Ingénierie en Réseaux Informatique et Systèmes d''Information', 1, 3, 2, 1),
 (4, 'SIT1', 'Sécurité IT', 1, 1, 3, 1),
 (5, 'SIT2', 'Sécurité IT', 1, 2, 3, 1),
-(6, 'SIT3', 'Sécurité IT', 1, 3, 3, 1);
+(6, 'SIT3', 'Sécurité IT', 1, 3, 3, 1),
+(7, 'SIR', 'Systèmes Informatiques Répartis', 2, 1, 4, 1),
+(8, 'Cybersécurité', 'Cybersécurité', 2, 1, 5, 1),
+(9, 'IAII1', 'Intelligence Artificielle et Ingénierie Informatique', 3, 1, 6, 1),
+(10, 'IAII2', 'Intelligence Artificielle et Ingénierie Informatique', 3, 2, 6, 1);
 
 -- ---------------------------------------------------------------------------------
 
