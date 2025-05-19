@@ -38,22 +38,26 @@
             0% { opacity: 1; }
             100% { opacity: 0; }
         }
+
+        .student-group-form .btn-primary:hover{
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
+        }
+
         .download-grp .btn-outline-primary {
             background-color: #C17900; !important;
             border-color: #C17900; !important;
-            color: #FFFFFF; !important;
         }
 
-        .page-item.active .page-link {
-            background-color: #C17900; !important;
-            border-color: #C17900; !important;
+        .download-grp .btn-outline-primary:hover, .download-grp .btn-primary:hover {
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
         }
 
         .actions {
             justify-content: start; !important;
         }
 
-        /* Nouveau style pour le hover des boutons d'action */
         .actions .btn-sm:hover {
             background-color: #C17900 !important;
             color: #FFFFFF !important;
