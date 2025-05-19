@@ -41,3 +41,31 @@ select:focus {
   border-color: #C17900 !important;
   box-shadow: 0 0 0 0.25rem rgba(193, 121, 0, 0.25) !important;
 }
+
+/* Override style of Pagination dataTable */
+
+ /*Bouton actif (page actuelle) */
+.page-item.active .page-link {
+  background-color: #C17900 !important;
+  border-color: #C17900 !important;
+  color: white !important;
+}
+
+/* Boutons normaux (1, 2, 3, etc.) */
+.page-item .page-link {
+  color: #C17900 !important;
+}
+
+/* Bouton "Previous" et "Next" */
+.page-item.previous .page-link,
+.page-item.next .page-link {
+  color: #C17900 !important;
+}
+
+/* Bouton "Previous" et "Next" au survol */
+.page-item.previous .page-link:hover,
+.page-item.next .page-link:hover {
+  background-color: #C17900 !important;
+  border-color: #C17900 !important;
+  color: white !important;
+}
