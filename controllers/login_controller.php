@@ -13,7 +13,7 @@ function setUserSession($userData, $roleData): void
     $_SESSION['role_name'] = $roleData['nom']; // roleData is an associative array
 }
 
-// Function to redirect based on role
+// Function to redirect based on a role
 function redirectUser($role): void
 {
     $baseUrl = "/FSTg-Management-System/views/";
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         redirectUser($userData['id_role']);
 
     } else {
-        $_SESSION['error'][] = "Invalid login details";
+        $_SESSION['error'][] = "Email ou mot de passe incorrect";
         header("Location: /FSTg-Management-System/index.php");
         exit();
     }
