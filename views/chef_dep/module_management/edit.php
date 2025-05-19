@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://ecampus-fst.uca.ma/pluginfile.php/1/theme_moove/favicon/1739555045/logo-universite-cadi-ayyad-marrakech-uca%20%281%29.ico">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- Icons and Fonts -->
     <link rel="stylesheet" href="../../../assets/plugins/feather/feather.css">
@@ -34,6 +34,11 @@
         @keyframes fadeOut {
             0% { opacity: 1; }
             100% { opacity: 0; }
+        }
+
+        .student-submit .btn-primary:hover{
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
         }
     </style>
 </head>
@@ -169,7 +174,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/chef_dep/side
         };
 
         <?php if(isset($_SESSION['error']) && isset($_SESSION['messageEmail'])): ?>
-        toastr.error("<?php echo $_SESSION['error']; ?>", "<?php echo $_SESSION['messageEmail']; ?>");
+            toastr.error("<?php echo $_SESSION['error']; ?>", "<?php echo $_SESSION['messageEmail']; ?>");
         <?php unset($_SESSION['error']); ?>
         <?php endif; ?>
     });
