@@ -35,6 +35,11 @@
             0% { opacity: 1; }
             100% { opacity: 0; }
         }
+
+        .student-submit .btn-primary:hover{
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
+        }
     </style>
 </head>
 <body>
@@ -97,7 +102,7 @@
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Rôle </label>
+                                                <label>Rôle <span class="login-danger">*</span></label>
                                                 <select class="form-control select" name="role" required>
                                                     <option value="3" <?= ($user['id_role'] == '3') ? 'selected' : '' ?>>Professeur</option>
                                                     <option value="2" <?= ($user['id_role'] == '2') ? 'selected' : '' ?>>Coordinateur (f. Coordinatrice)</option>
@@ -118,7 +123,7 @@
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Numéro de téléphone </label>
+                                                <label>Numéro de téléphone <span class="login-danger">*</span></label>
                                                 <input class="form-control" type="text" name="phone" value="<?= $user['phone'] ?>" required>
                                             </div>
                                         </div>
