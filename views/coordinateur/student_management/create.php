@@ -35,6 +35,11 @@
             0% { opacity: 1; }
             100% { opacity: 0; }
         }
+
+        .student-submit .btn-primary:hover{
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
+        }
     </style>
 </head>
 <body>
