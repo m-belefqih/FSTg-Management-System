@@ -29,6 +29,17 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notific
                 background: #C17900; !important;
             }
         }
+
+        .menu-toggle #toggle_btn:hover {
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
+        }
+
+        .dropdown-menu .dropdown-item:active {
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
+            color: white; !important;
+        }
     </style>
 </head>
 <body>
