@@ -28,6 +28,13 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.p
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-override.css">
 
+    <!-- Custom style CSS -->
+    <style>
+        .form-group .btn-primary:hover{
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
+        }
+    </style>
 </head>
 
 <body>
