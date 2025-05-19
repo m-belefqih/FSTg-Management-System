@@ -38,18 +38,22 @@
             0% { opacity: 1; }
             100% { opacity: 0; }
         }
+
+        .student-group-form .btn-primary:hover{
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
+        }
+
         .download-grp .btn-outline-primary {
             background-color: #C17900; !important;
             border-color: #C17900; !important;
-            color: #FFFFFF; !important;
         }
 
-        .page-item.active .page-link {
-            background-color: #C17900; !important;
-            border-color: #C17900; !important;
+        .download-grp .btn-outline-primary:hover, .download-grp .btn-primary:hover {
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
         }
 
-        /* Nouveau style pour le hover des boutons d'action */
         .actions .btn-sm:hover {
             background-color: #C17900 !important;
             color: #FFFFFF !important;
@@ -113,7 +117,7 @@
                                     </div>
                                     <div class="col-auto text-end float-end ms-auto download-grp">
                                         <a href="#" class="btn btn-outline-primary me-2"><i class="fas fa-download"></i> Télécharger</a>
-                                        <a href="index.php?action=create&id=<?php if(!empty($students)) { echo $students[0]['id_filiere'];} ?>" class="btn btn-primary"><i class="fas fa-plus"></i></a>
+                                        <a href="index.php?action=create&id=<?php if(!empty($students)) { echo $students[0]['id_filiere'];} ?>" class="btn btn-primary"><i class="fas fa-plus"></i> Ajouter un étudiant</a>
                                     </div>
                                 </div>
                             </div>
