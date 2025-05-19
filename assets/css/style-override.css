@@ -20,5 +20,24 @@
 
 input:focus {
   border-color: #C17900 !important;
-  outline: none; /* Optional: Removes the default outline */
+  outline: none;
+}
+
+select:focus {
+  border-color: #C17900 !important;
+  outline: none;
+}
+
+.form-check-input:checked {
+  background-color: #C17900 !important;
+  border-color: #C17900 !important;
+}
+
+.form-check-input:hover {
+  border-color: #C17900 !important;
+}
+
+.form-check-input:focus {
+  border-color: #C17900 !important;
+  box-shadow: 0 0 0 0.25rem rgba(193, 121, 0, 0.25) !important;
 }
