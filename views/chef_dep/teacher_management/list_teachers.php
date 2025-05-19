@@ -38,18 +38,22 @@
             0% { opacity: 1; }
             100% { opacity: 0; }
         }
+
+        .student-group-form .btn-primary:hover{
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
+        }
+
         .download-grp .btn-outline-primary {
             background-color: #C17900; !important;
             border-color: #C17900; !important;
-            color: #FFFFFF; !important;
         }
 
-        .page-item.active .page-link {
-            background-color: #C17900; !important;
-            border-color: #C17900; !important;
+        .download-grp .btn-outline-primary:hover, .download-grp .btn-primary:hover {
+            background-color: #975E00 !important;
+            border-color: #975E00 !important;
         }
 
-        /* Nouveau style pour le hover des boutons d'action */
         .actions .btn-sm:hover {
             background-color: #C17900 !important;
             color: #FFFFFF !important;
@@ -78,11 +82,6 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Chercher par ID ...">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="form-group">
                             <input type="text" class="form-control" placeholder="Chercher par Nom ...">
                         </div>
                     </div>
@@ -109,7 +108,7 @@
                                     </div>
                                     <div class="col-auto text-end float-end ms-auto download-grp">
                                         <a href="/FSTg-Management-System/controllers/downloadCSV_controller.php?action=teachers" class="btn btn-outline-primary me-2"><i class="fas fa-download"></i> Télécharger</a>
-                                        <a href="index.php?action=create" class="btn btn-primary"><i class="fas fa-plus"></i></a>
+                                        <a href="index.php?action=create" class="btn btn-primary"><i class="fas fa-plus"></i> Ajouter un enseignant</a>
                                     </div>
                                 </div>
                             </div>
