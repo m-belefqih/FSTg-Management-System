@@ -147,7 +147,9 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notific
                                 <?php
                                     if ($_SESSION['user_data']['id_role'] === 2) {
                                         echo ($_SESSION['user_data']['genre'] == 'male') ? "Coordinateur" : "Coordinatrice";
-                                    } else {
+                                    } elseif ($_SESSION['user_data']['id_role'] === 3) {
+                                        echo ($_SESSION['user_data']['genre'] == 'male') ? "Professeur" : "Professeure";
+                                    }else {
                                         echo $_SESSION['role_name'];
                                     }
                                 ?>
@@ -169,8 +171,10 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notific
                             <p class="text-muted mb-0">
                                 <?php
                                     if ($_SESSION['user_data']['id_role'] === 2) {
-                                        echo ($_SESSION['user_data']['genre'] == 'female') ? "Coordinatrice" : "Coordinateur";
-                                    } else {
+                                        echo ($_SESSION['user_data']['genre'] == 'male') ? "Coordinateur" : "Coordinatrice";
+                                    } elseif ($_SESSION['user_data']['id_role'] === 3) {
+                                        echo ($_SESSION['user_data']['genre'] == 'male') ? "Professeur" : "Professeure";
+                                    }else {
                                         echo $_SESSION['role_name'];
                                     }
                                 ?>
