@@ -140,7 +140,7 @@
                                                 </td>
                                                 <td>
                                                     <h2 class="table-avatar">
-                                                        <a href="#" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/FSTg-Management-System/assets/img/profiles/avatar-01.jpg" alt="User Image"></a>
+                                                        <a href="#" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/FSTg-Management-System/assets/img/femme.png" alt="User Image"></a>
 
                                                         <a href="#"><?php echo ucfirst($teacher['nom'])." ".ucfirst($teacher['prenom']) ?></a>
                                                     </h2>
