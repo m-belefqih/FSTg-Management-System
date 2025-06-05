@@ -136,7 +136,11 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notific
             <li class="nav-item dropdown has-arrow new-user-menus">
                 <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
                     <span class="user-img">
-                        <img class="rounded-circle" src="/FSTg-Management-System/assets/img/profiles/avatar-01.jpg" alt="test">
+                        <?php if(isset($_SESSION['user_data']['genre']) && $_SESSION['user_data']['genre'] === 'male'): ?>
+                            <img class="rounded-circle" src="/FSTg-Management-System/assets/img/homme.png" alt="homme">
+                        <?php elseif (isset($_SESSION['user_data']['genre']) && $_SESSION['user_data']['genre'] === 'female'): ?>
+                            <img class="rounded-circle" src="/FSTg-Management-System/assets/img/femme.png" alt="femme">
+                        <?php endif; ?>
                         <div class="user-text">
                             <h6><?php echo ucfirst($_SESSION['user_data']['nom']) . " " . ucfirst($_SESSION['user_data']['prenom']) ?></h6>
                             <p class="text-muted mb-0">
@@ -154,8 +158,11 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notific
                 <div class="dropdown-menu">
                     <div class="user-header">
                         <div class="avatar avatar-sm">
-                            <img src="/FSTg-Management-System/assets/img/profiles/avatar-01.jpg" alt="User Image"
-                                 class="avatar-img rounded-circle">
+                            <?php if(isset($_SESSION['user_data']['genre']) && $_SESSION['user_data']['genre'] === 'male'): ?>
+                                <img class="rounded-circle" src="/FSTg-Management-System/assets/img/homme.png" alt="homme">
+                            <?php elseif (isset($_SESSION['user_data']['genre']) && $_SESSION['user_data']['genre'] === 'female'): ?>
+                                <img class="rounded-circle" src="/FSTg-Management-System/assets/img/femme.png" alt="femme">
+                            <?php endif; ?>
                         </div>
                         <div class="user-text">
                             <h6><?php echo ucfirst($_SESSION['user_data']['nom']) . " " . ucfirst($_SESSION['user_data']['prenom']) ?></h6>
