@@ -352,6 +352,22 @@ CREATE TABLE `notification` (
 -- ---------------------------------------------------------------------------------
 
 --
+-- Table structure for table `timetable`
+--
+
+CREATE TABLE `timetable` (
+    `id` int(11) NOT NULL AUTO_INCREMENT UNIQUE,
+    `date` date NOT NULL,
+    `start_time` time NOT NULL,
+    `end_time` time NOT NULL,
+    `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+    `id_module` int(11) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- ---------------------------------------------------------------------------------
+
+--
 -- Constraints for dumped tables
 --
 
@@ -403,4 +419,7 @@ ALTER TABLE `notification`
     ADD CONSTRAINT `notification_fk1` FOREIGN KEY (`id_module`) REFERENCES `module` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
     ADD CONSTRAINT `notification_fk2` FOREIGN KEY (`id_sender`) REFERENCES `user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
     ADD CONSTRAINT `notification_fk3` FOREIGN KEY (`id_receiver`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `timetable`
+    ADD CONSTRAINT `timetable_fk` FOREIGN KEY (`id_module`) REFERENCES `module` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
