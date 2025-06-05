@@ -363,3 +363,20 @@ function getCoordinatorOfModule($id_module): ?int
         return null;
     }
 }
+
+function findModules($id_filiere, $semestre): ?array
+{
+    global $conn;
+    try {
+        $query = "SELECT id, nom FROM module WHERE id_filiere = ? AND semestre = ?";
+
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id_filiere, $semestre]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de l'exécution de la requête : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
