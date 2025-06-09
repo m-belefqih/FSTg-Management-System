@@ -29,7 +29,7 @@
                             <a href="#"><i class="fas fa-book"></i> <span> Cours</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-book-reader"></i><span> Liste des Modules</span></a>
+                            <a href="#"><i class="fas fa-graduation-cap"></i><span> Étudiants</span></a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-clipboard"></i> <span> Notes</span></a>
