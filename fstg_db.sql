@@ -246,7 +246,7 @@ INSERT INTO `module` (`id`, `nom`, `semestre`, `id_filiere`, `id_teacher`) VALUE
 (1, 'Programmation Orienté Objet Java', 1, 1, 4),
 (2, 'Réseaux et Standardisation', 1, 1, 3),
 (3, 'Génie Logiciel et UML', 2, 1, 9),
-(4, 'Développement Web Back End', 2, 1, 2),
+(4, 'Développement Web Back End', 2, 1, 9),
 
 -- Modules of IRISI 2
 (5, 'Programmation Mobile', 1, 2, 2),
@@ -368,6 +368,30 @@ CREATE TABLE `timetable` (
 -- ---------------------------------------------------------------------------------
 
 --
+-- Table structure for table `attachment`
+--
+
+CREATE TABLE `attachment` (
+     `id` int(11) NOT NULL AUTO_INCREMENT UNIQUE,
+     `title` varchar(255) NOT NULL,
+     `type` enum('Cours','TD','TP') NOT NULL,
+     `filename` varchar(255) NOT NULL,
+     `filepath` varchar(255) NOT NULL,
+     `upload_date` timestamp NOT NULL DEFAULT current_timestamp(),
+     `id_module` int(11) NOT NULL,
+     PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `attachment`
+--
+
+INSERT INTO `attachment` (`id`, `title`, `type`, `filename`, `filepath`, `upload_date`, `id_module`) VALUES
+(1, 'Cours de PHP avancée', 'Cours', 'PHP_Notes_For_Professionals.pdf', '/uploads/PHP_Notes_For_Professionals.pdf', '2025-04-29 15:04:10', 4);
+
+-- ---------------------------------------------------------------------------------
+
+--
 -- Constraints for dumped tables
 --
 
@@ -422,4 +446,7 @@ ALTER TABLE `notification`
 
 ALTER TABLE `timetable`
     ADD CONSTRAINT `timetable_fk` FOREIGN KEY (`id_module`) REFERENCES `module` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `attachment`
+    ADD CONSTRAINT `attachment_fk` FOREIGN KEY (`id_module`) REFERENCES `module` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
