@@ -36,20 +36,17 @@
                         <li class="menu-title">
                             <span>Menu Professeur</span>
                         </li>
-                        <li class="submenu">
-                            <a href="#"><i class="fas fa-book-reader"></i> <span> Modules</span> <span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="#">Liste des modules</a></li>
-                            </ul>
+                        <li>
+                            <a href="#"><i class="fas fa-book"></i> <span> Cours</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-clipboard"></i>
-                                <span> Notes</span></a>
+                            <a href="#"><i class="fas fa-graduation-cap"></i><span> Étudiants</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-calendar-day"></i>
-                                <span> Emploi du temps</span>
-                            </a>
+                            <a href="#"><i class="fas fa-clipboard"></i> <span> Notes</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-calendar-day"></i> <span> Emploi du Temps</span></a>
                         </li>
                     <?php } ?>
                 </ul>
