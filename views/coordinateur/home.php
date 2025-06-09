@@ -12,7 +12,7 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['id_role'] == 2) { ?
 
     <title>Tableau de bord</title>
 
-    !-- Icon of FSTg -->
+    <!-- Icon of FSTg -->
     <link rel="shortcut icon" href="https://ecampus-fst.uca.ma/pluginfile.php/1/theme_moove/favicon/1739555045/logo-universite-cadi-ayyad-marrakech-uca%20%281%29.ico">
 
     <!-- Google Fonts -->
