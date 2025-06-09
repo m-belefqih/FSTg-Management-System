@@ -96,18 +96,18 @@
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms calendar-icon">
                                             <label>Date <span class="login-danger">*</span></label>
-                                            <input class="form-control datetimepicker" type="text" name="date" required>
+                                            <input class="form-control datetimepicker" type="text" name="date" placeholder="DD-MM-YYYY" required>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
-                                            <label>Start Time <span class="login-danger">*</span></label>
+                                            <label>Heure de Début <span class="login-danger">*</span></label>
                                             <input type="time" id="startTime" name="startTime" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
-                                            <label>End Time <span class="login-danger">*</span></label>
+                                            <label>Heure de Fin <span class="login-danger">*</span></label>
                                             <input type="time" id="endTime" name="endTime" class="form-control" required>
                                         </div>
                                     </div>
