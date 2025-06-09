@@ -56,3 +56,26 @@ function updateTimeTable($id, $date, $start_time, $end_time): bool
         return false;
     }
 }
+
+function findAllMyTimeTable($id_teacher): ?array
+{
+    global $conn;
+    $query = "SELECT t.*, m.nom AS nom_module, m.semestre, f.nom AS nom_filiere
+        FROM timetable AS t
+        JOIN module AS m
+        ON m.id = t.id_module
+        JOIN filiere AS f
+        ON f.id = m.id_filiere
+        WHERE m.id_teacher = ?";
+
+    try {
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$id_teacher]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de l'exécution de la requête : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return null;
+    }
+}
