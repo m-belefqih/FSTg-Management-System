@@ -100,3 +100,19 @@ function updateTimeTableAction(): void
     }
     exit;
 }
+
+
+// Function to get all timetables of a professor
+function getMyTimeTable(): void
+{
+    $timestable = array();
+    $timestable = findAllMyTimeTable($_SESSION['user_data']['id']);
+
+    // Débogage
+    file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+        date('Y-m-d H:i:s') . " - Données emploi du temps : " . print_r($timestable, true) . "\n",
+        FILE_APPEND
+    );
+
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/professeur/timetable_management/timetable.php');
+}
