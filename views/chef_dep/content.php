@@ -214,7 +214,7 @@
                                 <div class="circle-bar circle-bar1">
                                     <div class="circle-graph1" data-percent="55">
                                         <div class="progress-less">
-                                            <b>55/60</b>
+                                            <b>35/60</b>
                                             <p>Leçons réalisées</p>
                                         </div>
                                     </div>
@@ -263,7 +263,7 @@
                                     <ul class="activity-feed">
                                         <li class="feed-item d-flex align-items-center">
                                             <div class="dolor-activity">
-                                                <span class="feed-text1"><a>Administration Système et Réseaux</a></span>
+                                                <span class="feed-text1"><a>Fondamentaux de la sécurité - SIT 1</a></span>
                                                 <ul class="teacher-date-list">
                                                     <li><i class="fas fa-calendar-alt me-2"></i>6 Juin, 2025</li>
                                                     <li>|</li>
@@ -276,7 +276,7 @@
                                         </li>
                                         <li class="feed-item d-flex align-items-center">
                                             <div class="dolor-activity">
-                                                <span class="feed-text1"><a>Génie Logiciel et UML</a></span>
+                                                <span class="feed-text1"><a>Génie Logiciel et UML - IRISI 1</a></span>
                                                 <ul class="teacher-date-list">
                                                     <li><i class="fas fa-calendar-alt me-2"></i>5 Juin, 2025</li>
                                                     <li>|</li>
@@ -289,7 +289,7 @@
                                         </li>
                                         <li class="feed-item d-flex align-items-center">
                                             <div class="dolor-activity">
-                                                <span class="feed-text1"><a>Développement Web Backend</a></span>
+                                                <span class="feed-text1"><a>Développement Web Backend - IRISI1 & SIT1</a></span>
                                                 <ul class="teacher-date-list">
                                                     <li><i class="fas fa-calendar-alt me-2"></i>4 Juin, 2025</li>
                                                     <li>|</li>
@@ -324,42 +324,42 @@
                                 <p>08:00</p>
                                 <div class="calendar-box normal-bg">
                                     <div class="calandar-event-name">
-                                        <h4>Botanique</h4>
-                                        <h5>Lorem ipsum sit amet</h5>
+                                        <h4>Leçon de Cours : Réseaux 1</h4>
+                                        <h5>Filière : IRISI1 & SIT1</h5>
                                     </div>
                                     <span>08:00 - 09:00</span>
                                 </div>
                             </div>
                             <div class="calendar-details">
-                                <p>08:00</p>
+                                <p>09:00</p>
                                 <div class="calendar-box normal-bg">
                                     <div class="calandar-event-name">
-                                        <h4>Botanique</h4>
-                                        <h5>Lorem ipsum sit amet</h5>
+                                        <h4>Leçon de TD : Réseaux 1</h4>
+                                        <h5>Filière : IRISI1 & SIT1</h5>
                                     </div>
-                                    <span>08:00 - 09:00</span>
+                                    <span>09:00 - 10:00</span>
                                 </div>
                             </div>
                             <div class="calendar-details">
-                                <p>08:00</p>
+                                <p>10:00</p>
                                 <div class="calendar-box normal-bg">
                                     <div class="calandar-event-name">
-                                        <h4>Botanique</h4>
-                                        <h5>Lorem ipsum sit amet</h5>
+                                        <h4>Conférence sur le CyberSécurité</h4>
+                                        <h5>Tous les fillières</h5>
                                     </div>
-                                    <span>08:00 - 09:00</span>
+                                    <span>10:00 - 11:00</span>
                                 </div>
                             </div>
                             <div class="upcome-event-date">
-                                <h3>10 Jan</h3>
+                                <h3>12 Jan</h3>
                                 <span><i class="fas fa-ellipsis-h"></i></span>
                             </div>
                             <div class="calendar-details">
                                 <p>08:00</p>
                                 <div class="calendar-box normal-bg">
                                     <div class="calandar-event-name">
-                                        <h4>Botanique</h4>
-                                        <h5>Lorem ipsum sit amet</h5>
+                                        <h4>Leçon de Cours : Web Front End</h4>
+                                        <h5>Filière : IRISI2</h5>
                                     </div>
                                     <span>08:00 - 09:00</span>
                                 </div>

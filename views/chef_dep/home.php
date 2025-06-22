@@ -51,6 +51,13 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['id_role'] == 1) { ?
     <script src="../../assets/plugins/script.js"></script>
 
     <script>
+        // Override the default circle progress values
+        $(".circle-graph1").circleProgress({
+            value: 0.60, // example value
+            size: 300,
+            fill: { color: "#c17900" }
+        });
+
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
         }

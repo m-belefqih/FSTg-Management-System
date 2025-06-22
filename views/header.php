@@ -85,7 +85,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notific
                 <?php endif; ?>
 
                 <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
-                    <img src="/FSTg-Management-System/assets/img/icons/header-icon-05.svg" alt="">
+                    <img src="/FSTg-Management-System/assets/img/icons/header-icon-notification.svg" alt="">
                 </a>
 
                 <div class="dropdown-menu notifications">
@@ -128,7 +128,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notific
             <!-- Other menu items -->
             <li class="nav-item zoom-screen me-2">
                 <a href="#" class="nav-link header-nav-list win-maximize">
-                    <img src="/FSTg-Management-System/assets/img/icons/header-icon-04.svg" alt="">
+                    <img src="/FSTg-Management-System/assets/img/icons/header-icon-screen.svg" alt="">
                 </a>
             </li>
 

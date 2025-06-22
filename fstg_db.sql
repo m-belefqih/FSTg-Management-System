@@ -7,7 +7,7 @@
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.13
 --
--- Auteur : Mohammed Belefqih
+-- Author: Mohammed Belefqih
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;

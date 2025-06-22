@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="../../assets/plugins/simple-calendar/simple-calendar.css">
 
+<style>
+    .normal-bg::before {
+        background: #c17900; !important;
+    }
+</style>
+
 <div class="page-wrapper">
     <div class="content container-fluid">
         <div class="page-header">
@@ -34,10 +40,10 @@
                         <div class="db-widgets d-flex justify-content-between align-items-center">
                             <div class="db-info">
                                 <h6>Total Modules</h6>
-                                <h3 class="num" data-value="52">00</h3>
+                                <h3 class="num" data-value="16">00</h3>
                             </div>
                             <div class="db-icon">
-                                <img src="../../assets/img/icons/teacher-icon-01.svg" alt="Dashboard Icon">
+                                <img src="../../assets/img/icons/courses.svg" width="60" height="60">
                             </div>
                         </div>
                     </div>
@@ -48,11 +54,11 @@
                     <div class="card-body">
                         <div class="db-widgets d-flex justify-content-between align-items-center">
                             <div class="db-info">
-                                <h6>Total Students</h6>
-                                <h3 class="num" data-value="132">000</h3>
+                                <h6>Total Étudiants</h6>
+                                <h3 class="num" data-value="80">000</h3>
                             </div>
                             <div class="db-icon">
-                                <img src="../../assets/img/icons/dash-icon-01.svg" alt="Dashboard Icon">
+                                <img src="../../assets/img/icons/student.svg" width="80" height="80">
                             </div>
                         </div>
                     </div>
@@ -63,12 +69,11 @@
                     <div class="card-body">
                         <div class="db-widgets d-flex justify-content-between align-items-center">
                             <div class="db-info">
-                                <h6>Total Teachers</h6>
-                                <h3 class="num" data-value="52">00</h3>
+                                <h6>Total Enseignants</h6>
+                                <h3 class="num" data-value="10">00</h3>
                             </div>
                             <div class="db-icon">
-                                <img src="../../assets/img/icons/teacher.png" style="width:40px;margin-left:5px"
-                                     alt="Dashboard Icon">
+                                <img src="../../assets/img/icons/teacher.svg" width="80" height="80">
                             </div>
                         </div>
                     </div>
@@ -79,12 +84,11 @@
                     <div class="card-body">
                         <div class="db-widgets d-flex justify-content-between align-items-center">
                             <div class="db-info">
-                                <h6>Added Grades</h6>
+                                <h6>Notes Ajoutées</h6>
                                 <h3 class="num" data-value="14">0</h3>
                             </div>
                             <div class="db-icon">
-                                <img src="../../assets/img/icons/school.png" style="width: 40px;margin-left:7px"
-                                     alt="Dashboard Icon">
+                                <img src="../../assets/img/icons/grades.svg" width="80" height="80">
                             </div>
                         </div>
                     </div>
@@ -100,12 +104,11 @@
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                        <h5 class="card-title">Access Statistics</h5>
+                                        <h5 class="card-title">Activité d'Enseignement</h5>
                                     </div>
                                     <div class="col-6">
                                         <ul class="chart-list-out">
-                                            <li><span class="circle-blue"></span>Students</li>
-                                            <li><span class="circle-green"></span>Teachers</li>
+                                            <li><span class="circle-green"></span>Étudiants</li>
                                             <li class="star-menus"><a href="javascript:"><i class="fas fa-ellipsis-v"></i></a></li>
                                         </ul>
                                     </div>
@@ -124,7 +127,7 @@
                         <div id="calendar-doctor" class="calendar-container"></div>
                         <div class="calendar-info calendar-info1">
                             <div class="up-come-header">
-                                <h2>Upcoming Events</h2>
+                                <h2>Événements à venir</h2>
                                 <span><a href="javascript:"><i class="feather-plus"></i></a></span>
                             </div>
                             <div class="upcome-event-date">
@@ -132,33 +135,33 @@
                                 <span><i class="fas fa-ellipsis-h"></i></span>
                             </div>
                             <div class="calendar-details">
-                                <p>08:00 am</p>
+                                <p>08:00</p>
                                 <div class="calendar-box normal-bg">
                                     <div class="calandar-event-name">
-                                        <h4>Botony</h4>
-                                        <h5>Lorem ipsum sit amet</h5>
+                                        <h4>Leçon de Cours : Réseaux 1</h4>
+                                        <h5>Filière : IRISI1 & SIT1</h5>
                                     </div>
-                                    <span>08:00 - 09:00 am</span>
+                                    <span>08:00 - 09:00</span>
                                 </div>
                             </div>
                             <div class="calendar-details">
-                                <p>09:00 am</p>
+                                <p>09:00</p>
                                 <div class="calendar-box normal-bg">
                                     <div class="calandar-event-name">
-                                        <h4>Botony</h4>
-                                        <h5>Lorem ipsum sit amet</h5>
+                                        <h4>Leçon de TD : Réseaux 1</h4>
+                                        <h5>Filière : IRISI1 & SIT1</h5>
                                     </div>
-                                    <span>09:00 - 10:00 am</span>
+                                    <span>09:00 - 10:00</span>
                                 </div>
                             </div>
                             <div class="calendar-details">
-                                <p>10:00 am</p>
+                                <p>10:00</p>
                                 <div class="calendar-box normal-bg">
                                     <div class="calandar-event-name">
-                                        <h4>Botony</h4>
-                                        <h5>Lorem ipsum sit amet</h5>
+                                        <h4>Conférence sur le CyberSécurité</h4>
+                                        <h5>Tous les filières</h5>
                                     </div>
-                                    <span>10:00 - 11:00 am</span>
+                                    <span>10:00 - 11:00</span>
                                 </div>
                             </div>
                         </div>

@@ -17,7 +17,7 @@ $(document).ready(function(){
             dataLabels: { enabled: false },
             stroke: { curve: "smooth" },
             series: [
-                { name: "Students", color: '#70C4CF', data: [45, 60, 75, 51, 42, 42, 30] }
+                { name: "Students", color: '#c17900', data: [45, 60, 75, 51, 42, 42, 30] }
             ],
             xaxis: {
                 categories: [
@@ -42,7 +42,7 @@ $(document).ready(function(){
             dataLabels: { enabled: false },
             stroke: { curve: "straight" },
             series: [
-                { name: "Students", color: '#70C4CF', data: [45, 60, 75, 51, 42, 42, 30] }
+                { name: "Students", color: '#c17900', data: [45, 60, 75, 51, 42, 42, 30] }
             ],
             xaxis: {
                 categories: [
@@ -56,7 +56,7 @@ $(document).ready(function(){
         chart.render();
     }
 
-if($('#bar').length>0){var optionsBar={chart:{type:'bar',height:350,width:'100%',stacked:false,toolbar:{show:false},},dataLabels:{enabled:false},plotOptions:{bar:{columnWidth:'55%',endingShape:'rounded'},},stroke:{show:true,width:2,colors:['transparent']},series:[{name:"Boys",color:'#70C4CF',data:[420,532,516,575,519,517,454,392,262,383,446,551],},{name:"Girls",color:'#3D5EE1',data:[336,612,344,647,345,563,256,344,323,300,455,456],}],labels:[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020],xaxis:{labels:{show:false},axisBorder:{show:false},axisTicks:{show:false},},yaxis:{axisBorder:{show:false},axisTicks:{show:false},labels:{style:{colors:'#777'}}},title:{text:'',align:'left',style:{fontSize:'18px'}}}
+if($('#bar').length>0){var optionsBar={chart:{type:'bar',height:350,width:'100%',stacked:false,toolbar:{show:false},},dataLabels:{enabled:false},plotOptions:{bar:{columnWidth:'55%',endingShape:'rounded'},},stroke:{show:true,width:2,colors:['transparent']},series:[{name:"Boys",color:'#c17900',data:[420,532,516,575,519,517,454,392,262,383,446,551],},{name:"Girls",color:'#3D5EE1',data:[336,612,344,647,345,563,256,344,323,300,455,456],}],labels:[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020],xaxis:{labels:{show:false},axisBorder:{show:false},axisTicks:{show:false},},yaxis:{axisBorder:{show:false},axisTicks:{show:false},labels:{style:{colors:'#777'}}},title:{text:'',align:'left',style:{fontSize:'18px'}}}
 var chartBar=new ApexCharts(document.querySelector('#bar'),optionsBar);chartBar.render();}
 if($('#s-line').length>0){var sline={chart:{height:350,type:'line',zoom:{enabled:false},toolbar:{show:false,}},dataLabels:{enabled:false},stroke:{curve:'straight'},series:[{name:"Desktops",data:[10,41,35,51,49,62,69,91,148]}],title:{text:'Product Trends by Month',align:'left'},grid:{row:{colors:['#f1f2f3','transparent'],opacity:0.5},},xaxis:{categories:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'],}}
 var chart=new ApexCharts(document.querySelector("#s-line"),sline);chart.render();}});if($('#s-line-area').length>0){var sLineArea={chart:{height:350,type:'area',toolbar:{show:false,}},dataLabels:{enabled:false},stroke:{curve:'smooth'},series:[{name:'series1',data:[31,40,28,51,42,109,100]},{name:'series2',data:[11,32,45,32,34,52,41]}],xaxis:{type:'datetime',categories:["2018-09-19T00:00:00","2018-09-19T01:30:00","2018-09-19T02:30:00","2018-09-19T03:30:00","2018-09-19T04:30:00","2018-09-19T05:30:00","2018-09-19T06:30:00"],},tooltip:{x:{format:'dd/MM/yy HH:mm'},}}
