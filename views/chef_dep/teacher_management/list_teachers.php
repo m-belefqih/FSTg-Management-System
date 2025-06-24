@@ -80,17 +80,17 @@
 
             <div class="student-group-form">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-5 col-md-5">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Chercher par Nom ...">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-5 col-md-5">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Chercher par numéro de téléphone ...">
+                            <input type="text" class="form-control" placeholder="Chercher par Rôle ...">
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2">
                         <div class="search-student-btn">
                             <button type="btn" class="btn btn-primary">Chercher</button>
                         </div>
@@ -104,11 +104,11 @@
                             <div class="page-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h3 class="page-title">Enseignants du Département <?php if(!empty($teachers)) { echo $teachers[0]['nom_departement'];} ?></h3>
+                                        <h3 class="page-title">Enseignants du Département : <?php if(!empty($teachers)) { echo $teachers[0]['nom_departement'];} ?></h3>
                                     </div>
                                     <div class="col-auto text-end float-end ms-auto download-grp">
                                         <a href="/FSTg-Management-System/controllers/downloadCSV_controller.php?action=teachers" class="btn btn-outline-primary me-2"><i class="fas fa-download"></i> Télécharger</a>
-                                        <a href="index.php?action=create" class="btn btn-primary"><i class="fas fa-plus"></i> Ajouter un enseignant</a>
+                                        <a href="index.php?action=create" class="btn btn-primary"><i class="fas fa-plus"></i> Ajouter un Enseignant</a>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +162,6 @@
                                                         <a href="index.php?action=edit&id=<?php echo $teacher['id']; ?>" class="btn btn-sm bg-danger-light">
                                                             <i class="fa fa-edit"></i>
                                                         </a>
-
                                                         <a href="javascript:void(0);" onclick="confirmDelete(<?php echo $teacher['id']; ?>, '<?php echo addslashes($teacher['nom'] . ' ' . $teacher['prenom']); ?>')" class="btn btn-sm bg-danger-light">
                                                             <i class="fa fa-trash"></i>
                                                         </a>

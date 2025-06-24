@@ -25,7 +25,8 @@ function getRoleById($roleId)
     $query = "SELECT nom FROM role WHERE id = ?";
     $stmt = $conn->prepare($query);
     $stmt->execute([$roleId]);
-    return $stmt->fetch(PDO::FETCH_ASSOC);}
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
 
 // Function to handle remember me functionality
 function handleRememberMe($userId):void
@@ -41,7 +42,7 @@ function handleRememberMe($userId):void
     $stmt->execute([$selector, $hashedValidator, $userId, $expiry]);
 
     // Set the cookie to use it in session.php
-    // cookie is will expire in 30 days
+    // cookie it will expire in 30 days
     setcookie('remember', $selector.':'.bin2hex($validator), time() + (86400 * 30), "/", "", false, true);
 }
 

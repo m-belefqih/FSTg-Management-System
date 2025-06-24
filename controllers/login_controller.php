@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             handleRememberMe($userData['id']);
         }
 
-        // Redirect user based on role
+        // Redirect user based on a role
         redirectUser($userData['id_role']);
 
     } else {
