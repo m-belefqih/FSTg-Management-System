@@ -80,17 +80,17 @@
 
             <div class="student-group-form">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-5 col-md-5">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Chercher par Nom ...">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-5 col-md-5">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Chercher par filière ...">
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2">
                         <div class="search-student-btn">
                             <button type="btn" class="btn btn-primary">Chercher</button>
                         </div>
