@@ -37,7 +37,15 @@ function storeAction(): void
     // Verify if the email already exists
     if (checkEmail($email)) {
         $_SESSION['error'] = "Cette email existe déjà";
-        $_SESSION['messageEmail'] = $email;
+        $_SESSION['message'] = $email;
+        header('Location: index.php?action=create');
+        exit();
+    }
+
+    // Verify if the CIN already exists
+    if (checkCIN($CIN)) {
+        $_SESSION['error'] = "Cette CIN existe déjà";
+        $_SESSION['message'] = $CIN;
         header('Location: index.php?action=create');
         exit();
     }

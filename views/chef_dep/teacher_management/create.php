@@ -187,12 +187,12 @@
                 "hideMethod": "fadeOut"
             };
 
-            <?php if(isset($_SESSION['error']) && isset($_SESSION['messageEmail'])): ?>
-                toastr.error("<?php echo $_SESSION['error']; ?>", "<?php echo $_SESSION['messageEmail']; ?>");
+            <?php if(isset($_SESSION['error']) && isset($_SESSION['message'])): ?>
+                toastr.error("<?php echo $_SESSION['error']; ?>", "<?php echo $_SESSION['message']; ?>");
             <?php endif; ?>
 
             <?php unset($_SESSION['error']); ?>
-            <?php unset($_SESSION['messageEmail']); ?>
+            <?php unset($_SESSION['message']); ?>
         });
     </script>
 </body>

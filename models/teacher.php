@@ -38,6 +38,23 @@ function checkEmail($email): bool
     }
 }
 
+function checkCIN($CIN): bool
+{
+    global $conn;
+    try {
+        $query = "SELECT COUNT(*) as count FROM user WHERE CIN = ?";
+        $stmt = $conn->prepare($query);
+        $stmt->execute([$CIN]);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result['count'] > 0 ? true : false ;
+    } catch (PDOException $e) {
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/logs/error_log.txt',
+            date('Y-m-d H:i:s') . " - Erreur lors de la vérification du CIN : " . $e->getMessage() . "\n",
+            FILE_APPEND);
+        return false;
+    }
+}
+
 function create($nom, $prenom, $genre, $dateNaissance, $email, $CIN, $role, $phone): bool
 {
     global $conn;
