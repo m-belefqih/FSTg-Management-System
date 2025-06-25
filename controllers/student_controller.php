@@ -86,7 +86,7 @@ function storeAction(): void
     if($test){
         $_SESSION['success'] = "Etudiant a été ajouté avec succès";
     }else {
-        $_SESSION['error'] = "Échec de la suppression";
+        $_SESSION['error'] = "Échec de l'ajout de l'étudiant";
     }
 
     header('Location: index.php?action=list&id=' . $id_filiere);

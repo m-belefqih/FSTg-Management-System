@@ -263,12 +263,12 @@ include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/coordinateur/
 
 
         <?php if(isset($_SESSION['success'])): ?>
-        toastr.success("<?php echo $_SESSION['success']; ?>", 'Succès !');
+            toastr.success("<?php echo $_SESSION['success']; ?>", 'Succès !');
         <?php unset($_SESSION['success']); ?>
         <?php endif; ?>
 
         <?php if(isset($_SESSION['error'])): ?>
-        toastr.error("<?php echo $_SESSION['error']; ?>", 'Réssayer !');
+            toastr.error("<?php echo $_SESSION['error']; ?>", <?php echo $_SESSION['message']; ?>);
         <?php unset($_SESSION['error']); ?>
         <?php endif; ?>
 
