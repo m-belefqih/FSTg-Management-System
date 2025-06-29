@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../../../assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../assets/css/style.css">
     <link rel="stylesheet" href="../../../assets/css/style-override.css">
+    <link rel="stylesheet" href="../../../assets/css/cards.css">
 
     <!-- Custom style CSS -->
     <style>
@@ -31,6 +32,54 @@
         a:hover{
             color: #C17900; !important;
         }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .card a {
+            color: white !important;
+        }
+
+        .card a:hover {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        body {
+            background-color: #f7f7fa !important;
+        }
+
+        .main-wrapper {
+            background-color: #f7f7fa !important;
+        }
+
+        .page-wrapper {
+            background-color: #f7f7fa !important;
+        }
+
+        .content.container-fluid {
+            background-color: #f7f7fa !important;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .page-header {
+            background-color: #f7f7fa !important;
+        }
+
+        .breadcrumb {
+            background-color: transparent !important;
+        }
+
     </style>
 
 </head>
@@ -42,13 +91,13 @@
             <div class="page-header">
                 <div class="row">
                     <div class="col">
-                        <h3 class="page-title">Accédez à un module pour ajouter une pièce jointe</h3>
+                        <h3 class="page-title">Vue l’ensemble des Cours, TD et TP de la filière <?php if(isset($modules)){ echo $modules[0]['nom_filiere'] ;} ?></h3>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a href="../home.php">
                                     <?php
                                     if (isset($_SESSION['user_data']['genre'])) {
-                                        echo ($_SESSION['user_data']['genre'] == 'male') ? "Professeur" : "Professeure";
+                                        echo ($_SESSION['user_data']['genre'] == 'male') ? "Étudiant" : "Étudiante";
                                     }
                                     ?>
                                 </a>
@@ -59,23 +108,28 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12" style="display:flex;justify-content:center;flex-direction:row;">
-                    <?php if(isset($modules)): ?>
-                        <?php foreach ($modules as $module): ?>
-                            <div class="card flex-fill bg-white" style="width:fit-content;margin-left:10px">
-                                <div class="card-header">
-                                    <h5 class="card-title mb-0">Module : <?php echo $module['nom'] ?></h5>
+                <div class="col-sm-12">
+                    <div class="row justify-content-start">
+                        <?php if(isset($modules)) : ?>
+                            <?php foreach($modules as $module) : ?>
+                                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                                    <div class="card" style="border-radius: 15px; overflow: hidden;">
+                                        <div class="card-body" style="background: linear-gradient(45deg, #C17900, #975E00);">
+                                            <a href="index.php?action=list&id=<?php echo htmlspecialchars($module['id']); ?>"
+                                               class="text-decoration-none">
+                                                <h5 class="card-title text-white mb-3">
+                                                    <?php echo htmlspecialchars($module['nom']); ?>
+                                                </h5>
+                                                <p class="card-text text-white-50">
+                                                    Semestre <?php echo htmlspecialchars($module['semestre']); ?>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        Filière : <?php echo $module['nom_filiere'] ?> <br>
-                                        Semestre <?php echo $module['semestre'] ?>
-                                    </p>
-                                    <a class="btn btn-primary" href="/FSTg-Management-System/views/professeur/attachment_management/index.php?action=list&id=<?php echo $module['id']; ?>">Accéder</a>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,7 +138,7 @@
 
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/header.php');
-include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/professeur/sidebar.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/student/sidebar.php');
 ?>
 
 <script src="../../../assets/js/jquery-3.6.0.min.js"></script>

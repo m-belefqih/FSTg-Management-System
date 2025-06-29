@@ -117,10 +117,10 @@
                             <div class="page-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h3 class="page-title">Pièces jointes du module : <?php if(!empty($attachments)) { echo $attachments[0]['nom_module'];} ?></h3>
+                                        <h3 class="page-title">Pièces jointes du module : <?php if(!empty($module)) { echo $module['nom'];} ?></h3>
                                     </div>
                                     <div class="col-auto text-end float-end ms-auto download-grp">
-                                        <a href="index.php?action=create&id=<?php if(!empty($attachments)) { echo $attachments[0]['id_module'];} ?>" class="btn btn-primary"><i class="fas fa-plus"></i> Ajouter une picèce jointe</a>
+                                        <a href="index.php?action=create&id=<?php if(!empty($module)) { echo $module['id'];} ?>" class="btn btn-primary"><i class="fas fa-plus"></i> Ajouter une picèce jointe</a>
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@
                                     <tr>
                                         <th>
                                             <div class="form-check check-tables">
-                                                <input class="form-check-input" type="checkbox" value="something">
+                                                <input class="form-check-input" type="checkbox">
                                             </div>
                                         </th>
                                         <th>Titre</th>
@@ -155,11 +155,11 @@
                                                 <td><?php echo $attachment['upload_date'] ?></td>
                                                 <td>
                                                     <div class="actions">
-                                                        <a href="index.php?action=edit&id=<?php echo $attachment['id']; ?>" class="btn btn-sm bg-danger-light">
-                                                            <i class="fa fa-edit"></i>
+                                                        <a href="/FSTg-Management-System/controllers/download_controller.php?action=attachment&id=<?php echo $attachment['id']; ?>" class="btn btn-sm bg-danger-light">
+                                                            <i class="fa fa-download"></i>
                                                         </a>
 
-                                                        <a href="javascript:void(0);" onclick="confirmDelete(<?php if(!empty($attachment)) { echo $attachment['id'];} ?>')" class="btn btn-sm bg-danger-light">
+                                                        <a href="javascript:void(0);" onclick="confirmDelete(<?php echo $attachment['id']; ?>, '<?php echo $attachment['title']; ?>')" class="btn btn-sm bg-danger-light">
                                                             <i class="fa fa-trash"></i>
                                                         </a>
                                                     </div>
@@ -206,7 +206,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/professeur/si
 
 <!-- sweetalert2 and Toastr configuration for notifications -->
 <script>
-    function confirmDelete(idFiliere, idModule, moduleName, teacherName) {
+    function confirmDelete(idAttachment, attachmentTitle) {
         const swalWithBootstrapButtons = Swal.mixin({
             customClass: {
                 confirmButton: 'btn btn-danger m-2',
@@ -217,7 +217,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/professeur/si
 
         swalWithBootstrapButtons.fire({
             title: 'Êtes-vous sûr ?',
-            text: `Vous êtes sur le point de supprimer l'affectation du module ${moduleName} au professeur ${teacherName}. Cette action est irréversible !`,
+            text: `Vous êtes sur le point de supprimer la pièce jointe "${attachmentTitle}". Cette action est irréversible !`,
             icon: 'warning',
             showCancelButton: true,
             confirmButtonText: 'Supprimer',
@@ -225,7 +225,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/professeur/si
             reverseButtons: true
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = `index.php?action=delete&idFiliere=${idFiliere}&id=${idModule}`;
+                window.location.href = `index.php?action=delete&id=${idAttachment}&idModule=<?php if(!empty($module)) { echo $module['id'];} ?>`;
             }
         });
     }
@@ -252,12 +252,12 @@ include($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/views/professeur/si
 
 
         <?php if(isset($_SESSION['success'])): ?>
-        toastr.success("<?php echo $_SESSION['success']; ?>", 'Succès !');
+            toastr.success("<?php echo $_SESSION['success']; ?>", 'Succès !');
         <?php unset($_SESSION['success']); ?>
         <?php endif; ?>
 
         <?php if(isset($_SESSION['error'])): ?>
-        toastr.error("<?php echo $_SESSION['error']; ?>", 'Réssayer !');
+            toastr.error("<?php echo $_SESSION['error']; ?>", 'Réssayer !');
         <?php unset($_SESSION['error']); ?>
         <?php endif; ?>
 

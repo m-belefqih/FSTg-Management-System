@@ -5,6 +5,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/auth/session.p
 if (isset($_SESSION['user_data'])) {
     require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/models/user.php');
     require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/models/module.php');
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/models/attachment.php');
 
     if (isset($_GET['action'])) {
         $action = $_GET['action'];
@@ -15,8 +16,8 @@ if (isset($_SESSION['user_data'])) {
             case 'modules':
                 downloadModulesCSV();
                 break;
-            case 'filieres':
-                //downloadFilieresCSV();
+            case 'attachment':
+                downloadAttachment();
                 break;
             default:
                 header("Location: /FSTg-Management-System/views/error.php");

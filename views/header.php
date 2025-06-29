@@ -149,8 +149,10 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notific
                                         echo ($_SESSION['user_data']['genre'] == 'male') ? "Coordinateur" : "Coordinatrice";
                                     } elseif ($_SESSION['user_data']['id_role'] === 3) {
                                         echo ($_SESSION['user_data']['genre'] == 'male') ? "Professeur" : "Professeure";
-                                    }else {
-                                        echo $_SESSION['role_name'];
+                                    } elseif ($_SESSION['user_data']['id_role'] === 4) {
+                                        echo ($_SESSION['user_data']['genre'] == 'male') ? "Étudiant" : "Étudiante";
+                                    } else {
+                                        echo $_SESSION['role_name']; // Cas de Chef de département
                                     }
                                 ?>
                             </p>
@@ -174,8 +176,10 @@ require($_SERVER['DOCUMENT_ROOT'] . '/FSTg-Management-System/controllers/notific
                                         echo ($_SESSION['user_data']['genre'] == 'male') ? "Coordinateur" : "Coordinatrice";
                                     } elseif ($_SESSION['user_data']['id_role'] === 3) {
                                         echo ($_SESSION['user_data']['genre'] == 'male') ? "Professeur" : "Professeure";
-                                    }else {
-                                        echo $_SESSION['role_name'];
+                                    } elseif ($_SESSION['user_data']['id_role'] === 4) {
+                                        echo ($_SESSION['user_data']['genre'] == 'male') ? "Étudiant" : "Étudiante";
+                                    } else {
+                                        echo $_SESSION['role_name']; // Chef de département
                                     }
                                 ?>
                             </p>
