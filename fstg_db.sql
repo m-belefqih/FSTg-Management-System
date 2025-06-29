@@ -387,7 +387,8 @@ CREATE TABLE `attachment` (
 --
 
 INSERT INTO `attachment` (`id`, `title`, `type`, `filename`, `filepath`, `upload_date`, `id_module`) VALUES
-(1, 'Cours de PHP avancée', 'Cours', 'PHP_Notes_For_Professionals.pdf', '/uploads/PHP_Notes_For_Professionals.pdf', '2025-04-29 15:04:10', 4);
+(1, 'Cours de PHP avancée', 'Cours', 'PHP_Notes_For_Professionals.pdf', '/uploads/PHP_Notes_For_Professionals.pdf', '2025-04-29 15:04:10', 4),
+(2, 'TP 1 de PHP', 'TP', 'TP1-MAIL-PHP.pdf', '/uploads/TP1-MAIL-PHP.pdf', '2025-05-04 14:12:45', 4);
 
 -- ---------------------------------------------------------------------------------
 
